@@ -1,0 +1,28 @@
+
+body{
+    font-family: monospace;
+    font-size: large;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: rgb(39, 39, 39);
+}
+.md-typeset h1 {
+    margin: 0 0 2rem;
+    color: rgb(255, 220, 22);
+    font-weight: 300;
+    font-size: 1.5625rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+.md-typeset h2 {
+    margin: 2rem 0 .8rem;
+    color: turquoise;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+.md-typeset a {
+    color: skyblue;
+    word-break: break-word;
+}
