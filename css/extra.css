@@ -3,26 +3,57 @@ body{
     font-family: monospace;
     font-size: large;
     font-weight: bolder;
-    color: whitesmoke;
-    background-color: rgb(39, 39, 39);
 }
-.md-typeset h1 {
-    margin: 0 0 2rem;
-    color: rgb(255, 220, 22);
-    font-weight: 300;
-    font-size: 1.5625rem;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
+:root {
+
+    /* Default color shades */
+    --md-default-fg-color:               rgb(255, 255, 255);
+    --md-default-fg-color--light:        rgb(52, 223, 0);
+    --md-default-fg-color--lighter:      rgb(41, 175, 0);
+    --md-default-fg-color--lightest:     rgb(17, 71, 1);
+    --md-default-bg-color:               rgb(39, 39, 39);
+    --md-default-bg-color--light:        rgba(53, 53, 53, 0.726);
+    --md-default-bg-color--lighter:      rgb(107, 107, 107);
+    --md-default-bg-color--lightest:     rgb(200, 200, 200);
+  
+    /* Primary color shades */
+    --md-primary-fg-color:               rgb(50, 214, 0);
+    --md-primary-fg-color--light:        rgba(50, 214, 0, 0.644);
+    --md-primary-fg-color--dark:         rgba(50, 214, 0, 0.246);
+    --md-primary-bg-color:               rgb(47, 47, 47);
+    --md-primary-bg-color--light:        rgb(129, 129, 129);
+    
+    /* Accent color shades */
+    --md-accent-fg-color:                rgb(3, 189, 3);
+    --md-accent-fg-color--transparent:   rgba(3, 189, 3, 0.657);
+    --md-accent-bg-color:                rgb(46, 46, 46);
+    --md-accent-bg-color--light:         rgb(105, 105, 105);
+  
+    /* Code block color shades */
+    --md-code-bg-color:                  rgb(255, 255, 255);
+    --md-code-fg-color:                  rgb(0, 0, 0);
+  }
+
+  input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: black;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
 }
-.md-typeset h2 {
-    margin: 2rem 0 .8rem;
-    color: turquoise;
-    font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 1.4;
-    letter-spacing: -0.01em;
-}
-.md-typeset a {
-    color: skyblue;
-    word-break: break-word;
-}
+
+/* .md-footer-meta {
+    display: none;
+} */
