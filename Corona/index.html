@@ -270,7 +270,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../LinkedIn%20tips/" title="LinkedIn Tips" class="md-nav__link">
+    <a href="../LinkedIn_tips/" title="LinkedIn Tips" class="md-nav__link">
       LinkedIn Tips
     </a>
   </li>
@@ -334,9 +334,56 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Project: Corona
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Project: Corona" class="md-nav__link md-nav__link--active">
       Project: Corona
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-201-date-april-16-2020" class="md-nav__link">
+    Version 2.0.1 - Date : April 16, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-20-date-march-23-27-2020" class="md-nav__link">
+    Version 2.0   Date: March 23-27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10-date-march-12-18-2020" class="md-nav__link">
+    Version 1.0   Date: March 12-18, 2020
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -368,6 +415,37 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#version-201-date-april-16-2020" class="md-nav__link">
+    Version 2.0.1 - Date : April 16, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-20-date-march-23-27-2020" class="md-nav__link">
+    Version 2.0   Date: March 23-27, 2020
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10-date-march-12-18-2020" class="md-nav__link">
+    Version 1.0   Date: March 12-18, 2020
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -387,6 +465,49 @@
                 
                 
                 <h1 id="covid-dashboard">Covid-dashboard<a class="headerlink" href="#covid-dashboard" title="Permanent link">&para;</a></h1>
+<h2 id="version-201-date-april-16-2020">Version 2.0.1 - Date : April 16, 2020<a class="headerlink" href="#version-201-date-april-16-2020" title="Permanent link">&para;</a></h2>
+<p><strong>Final</strong></p>
+<p><img alt="" src="../img/Corona/new_to_total%5Bupdated%5D.png" /></p>
+<ul>
+<li>The numbers had very extreme values due to inconsistency of data. Since we are focusing only on the trend, we do not require exact numbers. Therefore, a rolling mean of 5 values is implemented to smoothen out the irregularities.</li>
+</ul>
+<p><strong>Initial</strong></p>
+<p><img alt="" src="../img/Corona/new_to_total%5Bold%5D.png" /></p>
+<ul>
+<li>Added a graph plotting new cases to existing cases.</li>
+<li>The Graph is number of New cases per Total number of cases. In order to understand exponential growths for diseases, we must not plot the growth against time (which is not so useful in prediction) ; but with the total existing numbers.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>A fall in the graph indicates lowering of new cases with total cases. i.e. We see that China and Korea are out of the danger of new cases. Italy and Spain are seeing small rates of controling the virus.</li>
+<li>Axes are plotted on logarithmic scale.</li>
+</ul>
+<hr />
+<h2 id="version-20-date-march-23-27-2020">Version 2.0   Date: March 23-27, 2020<a class="headerlink" href="#version-20-date-march-23-27-2020" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../img/Corona/dashboard%5Bupdated-1%5D.png" />
+<img alt="" src="../img/Corona/dashboard%5Bupdated-2%5D.png" /></p>
+<p><strong>Updates</strong></p>
+<ul>
+<li>Added a Death Count Graph.</li>
+<li>Changed the theme of the dashboard to look more presentable.</li>
+<li>Added functionality of updating data in every refresh or at intervals of 6 hours.</li>
+</ul>
+<hr />
+<h2 id="version-10-date-march-12-18-2020">Version 1.0   Date: March 12-18, 2020<a class="headerlink" href="#version-10-date-march-12-18-2020" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../img/Corona/dashboard%5Bold-1%5D.png" />
+<img alt="" src="../img/Corona/dashboard%5Bold-2%5D.png" /></p>
+<ul>
+<li>Implemented a Confirmed Cases count graph.</li>
+<li>Implemented a New cases per day graph.</li>
+<li>Implemented a Pie chart for comparing proportions.</li>
+<li>Implemented a Table to give info on daily new cases.</li>
+<li>Deployed in production mode to Heroku.</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://youtu.be/54XLXg4fYsc?t=169">How To Tell If We're Beating COVID-19 - minutephysics</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
