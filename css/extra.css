@@ -7,11 +7,11 @@ body{
 :root {
 
     /* Default color shades */
-    --md-default-fg-color:               rgb(255, 255, 255);
+    --md-default-fg-color:               rgb(36, 35, 35);
     --md-default-fg-color--light:        rgb(52, 223, 0);
     --md-default-fg-color--lighter:      rgb(41, 175, 0);
     --md-default-fg-color--lightest:     rgb(17, 71, 1);
-    --md-default-bg-color:               rgb(39, 39, 39);
+    --md-default-bg-color:               rgb(255, 250, 250);
     --md-default-bg-color--light:        rgba(53, 53, 53, 0.726);
     --md-default-bg-color--lighter:      rgb(107, 107, 107);
     --md-default-bg-color--lightest:     rgb(200, 200, 200);
@@ -20,8 +20,8 @@ body{
     --md-primary-fg-color:               rgb(50, 214, 0);
     --md-primary-fg-color--light:        rgba(50, 214, 0, 0.644);
     --md-primary-fg-color--dark:         rgba(50, 214, 0, 0.246);
-    --md-primary-bg-color:               rgb(47, 47, 47);
-    --md-primary-bg-color--light:        rgb(129, 129, 129);
+    --md-primary-bg-color:               rgb(0, 0, 0);
+    --md-primary-bg-color--light:        rgb(46, 46, 46);
     
     /* Accent color shades */
     --md-accent-fg-color:                rgb(3, 189, 3);
