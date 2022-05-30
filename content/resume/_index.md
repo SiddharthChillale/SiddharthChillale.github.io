@@ -6,7 +6,7 @@ draft: false
 
 # Siddharth Chillale
 
-**Software / Graphics / Visuals**
+**Software & Graphics Engineer**
 
 (716) 903-2876 | 
 [schillal@buffalo.edu](mailto:schillal@buffalo.edu) | 

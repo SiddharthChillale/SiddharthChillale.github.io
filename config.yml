@@ -9,17 +9,17 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 enableGitInfo: true
-googleAnalytics: UA-123-45
+googleAnalytics: G-CMB721BXKS
 
 minify:
   disableXML: true
-  minifyOutput: true
+  # minifyOutput: true
 
 outputs:
     home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+      - HTML
+      - RSS
+      - JSON # is necessary
 
 params:
   env: production 
@@ -42,23 +42,20 @@ params:
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
-  hidemeta: true
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  showToc: false
+  
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "divide_square.svg"
     favicon16x16: "divide_square.svg"
     favicon32x32: "divide_square.svg"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    
 
   label:
     text: Siddharth
-    icon: /profile/puzzle.png
+    icon: profile/puzzle.png
     iconHeight: 35
 
   # profile-mode
@@ -73,7 +70,7 @@ params:
     imageTitle: my image
     buttons:
       - name: Resume 📥 
-        url: /resume.pdf
+        url: /docs/resume.pdf
       - name: Projects 📑
         url: projects
 
@@ -98,11 +95,11 @@ params:
       SiteVerificationTag: "XYZabc"
     
 
-  cover:
-    # responsiveImages: false
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+  # cover:
+  #   # responsiveImages: false
+  #   hidden: false # hide everywhere but not in structured data
+  #   hiddenInList: false # hide on list pages and home
+  #   hiddenInSingle: false # hide on single page
 
   editPost:
     URL: "https://github.com/siddharthchillale.github.io/content"
@@ -120,12 +117,39 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+frontmatter:
+  date:
+  - date
+  - publishDate
+  - lastmod
+  expiryDate:
+  - expiryDate
+  lastmod:
+  - :git
+  - lastmod
+  - date
+  - publishDate
+  publishDate:
+  - publishDate
+  - date
+
+imaging:
+  anchor: Smart
+  bgColor: '#ffffff'
+  hint: photo
+  quality: 75
+  resampleFilter: Box
 
 menu:
   main:
     - identifier: Resume
       name: Resume 📥
-      url: /resume/
+      url: /docs/resume.pdf
       weight: 1
     - identifier: Projects
       name: Projects 📑
