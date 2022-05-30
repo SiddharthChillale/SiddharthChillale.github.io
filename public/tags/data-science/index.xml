@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>data science on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/tags/data-science/</link>
+    <description>Recent content in data science on Siddharth C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 23 Feb 2022 21:47:05 +0530</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rendering Pipeline of Unreal Engine</title>
+      <link>https://siddharthchillale.github.io/projects/unreal_rendering/</link>
+      <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/unreal_rendering/</guid>
+      <description>My collection of things I find on my journeys through the internet.</description>
+    </item>
+    
+    <item>
+      <title>Corona Dashboard devlog</title>
+      <link>https://siddharthchillale.github.io/projects/corona_dashboard/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/corona_dashboard/</guid>
+      <description>My collection of things I find on my journeys through the internet.</description>
+    </item>
+    
+  </channel>
+</rss>
