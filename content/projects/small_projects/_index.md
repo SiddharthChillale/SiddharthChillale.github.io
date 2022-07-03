@@ -4,14 +4,6 @@ Date: 2020-11-22
 Author: Siddharth Chillale
 ---
 
-" **Corona Dashboard**"
-
-*   *Description* - Shows a dashboard for comparing affected numbers from COVID-19 thoughtout the world.
-
-*    *Link* - [Corona-Dashboard](https://covid-19-visual.herokuapp.com/)
-
-*    *Github Link* - [SiddharthChillale/dashboard-corona](https://github.com/SiddharthChillale/dashboard-corona)
-
 "**NIPS Papers Analysis**"
 
 *    Description- Discovering the hottest topics in machine learning by analysing NIPS papers using NLP libraries in python.

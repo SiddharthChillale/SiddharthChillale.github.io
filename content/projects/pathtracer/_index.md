@@ -2,7 +2,7 @@
 title: "PathTracer: Global Illumination"
 date: 2022-02-05T21:47:05+05:30
 draft: false
-summary: My collection of things I find on my journeys through the internet.
+summary: A pathtracing course project.
 categories: [Graphics]
 tags: [coding, graphics, projects]
 ShowToc: true
@@ -24,7 +24,7 @@ The pathtracer renders _COLLADA_ files.
 * Task 2. Handling ray-triangle and ray-sphere intersections;
 * Task 3: Path tracing
 
-{{< figure src="images/32_samples_doda_1.png" width="600px" caption="Example of the created GitHub repo and url to clone it." >}}
+{{< figure src="images/32_samples_doda_1.png" width="600px" caption="Cornell Box with dodecahedron. 32 samples per pixel" >}}
 
 ### Task 1. Generating Camera Rays
 Steps:
@@ -79,7 +79,7 @@ Figure: Ray-sphere intersection on Cornell Box (cbox.dae)
 Ray-triangle intersection on model of Cow (cow.dae)
 
  
-{{< figure src="images/32_samples_doda_1.png" width="600px" caption="Example of the created GitHub repo and url to clone it." >}}
+{{< figure src="images/32_samples_doda_1.png" width="600px" caption="Cornell Box with dodecahedron. 32 samples per pixel." >}}
 
 ### Task 3. Path tracing
 Indirect illumination.

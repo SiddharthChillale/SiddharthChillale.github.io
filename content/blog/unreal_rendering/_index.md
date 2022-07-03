@@ -2,7 +2,7 @@
 title: "Rendering Pipeline of Unreal Engine"
 date: 2022-02-23T21:47:05+05:30
 draft: false
-summary: My collection of things I find on my journeys through the internet.
+summary: A summary of the Rendering pipeline in Unreal Engine.
 categories: [Graphics]
 tags: [coding, data science, projects]
 ShowToc: true
@@ -13,9 +13,9 @@ cover:
   relative: true
 ---
 
-Rendering Pipeline :
+Below is an overview of the rendering pipeline that the Unreal Engine uses for rendering a single frame onto the screen. The following summary is written down as my understanding of the render engine of unreal given in the talk "Rendering Kickstart" on the Unreal Engine Community.
 
-* Intro and Philosophy
+* Goal of the Unreal pipeline 
     - best visuals and best performance on all targets and platforms
     - supports both forward and deferred rendering
 
@@ -50,8 +50,9 @@ Rendering Pipeline :
         - Scalability :
           - Using CVars for configs on different target platforms and devices. in-depth configs
 
+The devs 
+
 * Advices 
-    - *need to watch this again*
     - Shadow Rendering
     - Managing tris amd draw calls
     - Translucency
