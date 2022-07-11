@@ -140,7 +140,14 @@ if (!doNotTrack) {
 <header class="page-header"><div class="breadcrumbs"><a href="https://siddharthchillale.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://siddharthchillale.github.io/projects/">Projects</a></div>
   <h1>Ray Tracing: The Next Week</h1>
 </header>
-<div class="post-content"><p>Ray tracing next week</p>
+<div class="post-content"><figure>
+    <img loading="lazy" src="images/rt_next_week_100spp.png"
+         alt="Ray traced Spheres" width="9600px&#34;"/> <figcaption>
+            <p>Ray traced Spheres</p>
+        </figcaption>
+</figure>
+
+<p>Ray tracing next week</p>
 <ol>
 <li>Motion Blur</li>
 </ol>
@@ -154,19 +161,45 @@ Now preparing one box per sphere is good, but if you have hundred spheres,, calc
 <ol>
 <li>Solid Texture Mapping</li>
 </ol>
-<p>We create a texture class. this is attached to an object&rsquo;s material and acts as its base color. Here, we consider solid texturing, i.e. geometrically achieved textures rather than image look ups.</p>
+<p>We create a texture class. this is attached to an object&rsquo;s material and acts as its base color. Here, we consider solid texturing, i.e. geometrically achieved textures rather than image look ups. 
+<figure>
+    <img loading="lazy" src="images/texture_checker.png"
+         alt="Ray traced Spheres with checkerboard texture" width="500px"/> <figcaption>
+            <p>Ray traced Spheres with checkerboard texture</p>
+        </figcaption>
+</figure>
+</p>
 <ol start="4">
 <li>Perlin Noise</li>
 </ol>
-<p>We oversee the different types of random noise generation and create a noise texture.</p>
-<ol start="5">
-<li>Image Texture Mapping</li>
-</ol>
+<p>We oversee the different types of random noise generation and create a noise texture.
+<figure>
+    <img loading="lazy" src="images/noise0.png"
+         alt="Ray traced Spheres with discrete noise" width="300px"/> <figcaption>
+            <p>Ray traced Spheres with discrete noise</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img loading="lazy" src="images/noise4.png"
+         alt="Ray traced Spheres with noise texture" width="300px"/> <figcaption>
+            <p>Ray traced Spheres with noise texture</p>
+        </figcaption>
+</figure>
+
+5. Image Texture Mapping</p>
 <p>We looked at geometric textures, and now we can handle image texture data. We learn about uv mapping into an image.</p>
 <ol start="6">
 <li>Rectangles and Lights</li>
 </ol>
-<p>Here we come across the rendering equation that we were avoiding for so much time. Light/emissive surfaces are introduced. And the color function includes an approximation of the rendering equation. WE also create a scene of our sphere + rectangles primitives. There&rsquo;s no ray-triangle intersection handled until now or even in the future abd so mesh-laoding is not implemented.</p>
+<p>Here we come across the rendering equation that we were avoiding for so much time. Light/emissive surfaces are introduced. And the color function includes an approximation of the rendering equation. WE also create a scene of our sphere + rectangles primitives. There&rsquo;s no ray-triangle intersection handled until now or even in the future abd so mesh-laoding is not implemented. 
+<figure>
+    <img loading="lazy" src="images/emissive_lights.png"
+         alt="Emissive sphere and rectangle" width="600px"/> <figcaption>
+            <p>Emissive sphere and rectangle</p>
+        </figcaption>
+</figure>
+</p>
 <ol start="7">
 <li>Instances for rotation and translation</li>
 </ol>
@@ -174,7 +207,14 @@ Now preparing one box per sphere is good, but if you have hundred spheres,, calc
 <ol start="8">
 <li>Volumetric objects</li>
 </ol>
-<p>Volumetric objects can be thought of as materials where light enters the material and changes direction and intensity the further inside it is in that said material.</p>
+<p>Volumetric objects can be thought of as materials where light enters the material and changes direction and intensity the further inside it is in that said material. 
+<figure>
+    <img loading="lazy" src="images/volumetric.png"
+         alt="Volumetric cuboids" width="500px"/> <figcaption>
+            <p>Volumetric cuboids</p>
+        </figcaption>
+</figure>
+</p>
 <p>To understand more of the math used, go read my post on <a href="../rt_rest_of_life">Ray Tracing: The Rest of your life</a>.
 If you missed the post previous to this one (Ray Tracing in One Weekend), read it <a href="../rt_one_weekend/">here</a></p>
 <blockquote>

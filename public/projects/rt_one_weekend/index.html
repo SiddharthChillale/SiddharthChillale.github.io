@@ -147,7 +147,7 @@ if (!doNotTrack) {
         </figcaption>
 </figure>
 
-<p>I wanted to learn more about raytracing. I had taken up a Computer Science course in university before which taught ray tracing. Now I did understand the theory of raytracing and the math behind it, but I didn&rsquo;t completely understand how the codebase was structured.
+<p>Hello, I wanted to learn more about raytracing. I had taken up a Computer Science course in university before which taught ray tracing. Now I did understand the theory of raytracing and the math behind it, but I didn&rsquo;t completely understand how the codebase was structured.
 Luckily I came across Pete Shirley&rsquo;s books on RayTracing, namely <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">Ray Tracing in One Weekend</a>, <a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html">RayTracing the next week</a>, and <a href="https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html">Ray Tracing the rest of your life</a>.</p>
 <p>Below is my journey through all three books:</p>
 <h2 id="ray-tracing-in-one-weekend">Ray Tracing in One Weekend.<a hidden class="anchor" aria-hidden="true" href="#ray-tracing-in-one-weekend">#</a></h2>
@@ -223,6 +223,15 @@ Luckily I came across Pete Shirley&rsquo;s books on RayTracing, namely <a href="
 <li>
 <p>Now that we have a ray that shoots from the camera position in the direction of the pixel coordinate on the screen space, we follow that ray through the screen and onto our scene geometry which lies behind the screen. Here, we consider that our scene consists of only spheres. After figuring out the math that&rsquo;s required for calculating the intersection between a ray and a sphere, we get two hit points on the sphere. Now, the code just returns one hitpoint which is hardcoded, but the hitpoint where the normal at the hit point makes a negative cosine with ray dir should be considered. When a hit occurs, information about the place where the hit occured is stored in a struct(or an object) and returned to the caller of the intersection. This information includes the distance of this hit point from the pixel, the normal at the point of hit, the parameter t used in the parametric representation of the ray, the material of the object that it hit, if the face it hit is a front face of not (can be determined by dot pdt too), etc. This information is defined as the developer sees fit (Now DirectX12 handles this differently but that&rsquo;s a topic for another post).</p>
 </li>
+</ol>
+<figure>
+    <img loading="lazy" src="images/ray_sph_intr.png"
+         alt="A glass sphere with double glass walls" width="600px"/> <figcaption>
+            <p>A glass sphere with double glass walls</p>
+        </figcaption>
+</figure>
+
+<ol start="3">
 <li>
 <p>now that we have information about the point that our ray hit, we can do calculations on how to color this pixel from whose ray we intersected an object in the scene. This can be either simple by looking up the material from a resource already created earlier and which is available to the CPU memory, or it can be complicated if the object surface is special like Metal, Dielectric or a combination/permutation of both. This also gets comlicated if the object itself is a volumetric object. In these speacial cases, knowledge of geomtery comes in handy to figure out where the ray travels next. The rest of the chapters handle what types of material exists.</p>
 </li>
@@ -313,12 +322,40 @@ Luckily I came across Pete Shirley&rsquo;s books on RayTracing, namely <a href="
 </span>};</code></pre></td></tr></table>
 </div>
 </div>
+<figure>
+    <img loading="lazy" src="images/double_glass.png"
+         alt="A glass sphere with double glass walls" width="600px"/> <figcaption>
+            <p>A glass sphere with double glass walls</p>
+        </figcaption>
+</figure>
+
 <ol start="6">
 <li>
-<p>The code digresses a bit to cover camera movement and adding an in-camera blur. A thin lens approximation is used for achieving blur.</p>
+<p>The code digresses a bit to cover camera movement and adding an in-camera blur. A thin lens approximation is used for achieving blur.
+<figure>
+    <img loading="lazy" src="images/camera2.png"
+         alt="Translating and rotating camera" width="500px"/> <figcaption>
+            <p>Translating and rotating camera</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img loading="lazy" src="images/aperture.png"
+         alt="In-Camera depth of field by manipulating Aperture" width="500px"/> <figcaption>
+            <p>In-Camera depth of field by manipulating Aperture</p>
+        </figcaption>
+</figure>
+</p>
 </li>
 <li>
-<p>I have skipped over the details of the diffuse and specular materials here. This is because these topics are important topics that deserve more than a breif summary. However, I will not leave you shivering in the cold there. To make it rudimentarily simple, I summarise it thus : In a perfectly specular material, light is reflected perfectly. This is a mirror material and therefore we can generate the output ray direction easily. To generate a rough mirror/ metal look, we go for a not-so-perfect reflections. This means we sample a direction that is generated from a cone using the perfect reflection direction as the cone axis. For a diffuse material, the resultant ray direction can be from any direction from hit point. Thus we generate a random vector in a hemisphere aound the hit point and send out next ray there.</p>
+<p>I have skipped over the details of the diffuse and specular materials here. This is because these topics are important topics that deserve more than a breif summary. However, I will not leave you shivering in the cold there. To make it rudimentarily simple, I summarise it thus : In a perfectly specular material, light is reflected perfectly. This is a mirror material and therefore we can generate the output ray direction easily. To generate a rough mirror/ metal look, we go for a not-so-perfect reflections. This means we sample a direction that is generated from a cone using the perfect reflection direction as the cone axis. For a diffuse material, the resultant ray direction can be from any direction from hit point. Thus we generate a random vector in a hemisphere aound the hit point and send out next ray there.
+<figure>
+    <img loading="lazy" src="images/diffuse_sphere_rtwk.png"
+         alt="Sphere with diffuse lighting" width="500px"/> <figcaption>
+            <p>Sphere with diffuse lighting</p>
+        </figcaption>
+</figure>
+</p>
 </li>
 <li>
 <p>Now each ray when it hits an object send the information of that object back to the caller of that particular ray. this leads to an infinite recursive call. Since we don&rsquo;t want to crash our systems with filled out stack, we limit the recursive call to a limited number decided earlier.</p>

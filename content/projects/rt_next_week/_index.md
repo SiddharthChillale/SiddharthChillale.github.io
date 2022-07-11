@@ -12,11 +12,11 @@ cover:
   caption: "Cornell Box with GI"
   relative: true
 ---
+{{< figure src="images/rt_next_week_100spp.png" width=9600px" caption="Ray traced Spheres " >}}
 
 Ray tracing next week 
 
 1. Motion Blur
-
 
  Basically, we open the camera shutter for some time duration from time t0 to time t1. In that time, the object is sampled at some random intervals and the aggregate of all these samples is added up to give the final image of the object. This results in the object rendered as blurred due to motion. While this effect can be achieved in screenspace, a way to achieve it in-camera is shown here, I believe, to introduce the idea of timed-rays (or rays having temporal existence). However, this implementation does have shortcomings though. Namely that this captures motion blur of objects that are directly hit by the camera rays, but motion blur is not captured in the reflections. I might have to present a good example to showcase this effect. 
 
@@ -31,11 +31,14 @@ Now preparing one box per sphere is good, but if you have hundred spheres,, calc
 1. Solid Texture Mapping
 
 We create a texture class. this is attached to an object's material and acts as its base color. Here, we consider solid texturing, i.e. geometrically achieved textures rather than image look ups. 
+{{< figure src="images/texture_checker.png" width="500px" caption="Ray traced Spheres with checkerboard texture" >}}
+
 
 4. Perlin Noise
 
 We oversee the different types of random noise generation and create a noise texture.
-
+{{< figure src="images/noise0.png" width="300px" caption="Ray traced Spheres with discrete noise" >}}
+{{< figure src="images/noise4.png" width="300px" caption="Ray traced Spheres with noise texture" >}}
 5. Image Texture Mapping
 
 We looked at geometric textures, and now we can handle image texture data. We learn about uv mapping into an image. 
@@ -43,6 +46,7 @@ We looked at geometric textures, and now we can handle image texture data. We le
 6. Rectangles and Lights
 
 Here we come across the rendering equation that we were avoiding for so much time. Light/emissive surfaces are introduced. And the color function includes an approximation of the rendering equation. WE also create a scene of our sphere + rectangles primitives. There's no ray-triangle intersection handled until now or even in the future abd so mesh-laoding is not implemented. 
+{{< figure src="images/emissive_lights.png" width="600px" caption="Emissive sphere and rectangle" >}}
 
 7. Instances for rotation and translation
 
@@ -51,7 +55,7 @@ how rotation and translation is handled is very unintuitive for me. now it makes
 8. Volumetric objects
 
 Volumetric objects can be thought of as materials where light enters the material and changes direction and intensity the further inside it is in that said material. 
-
+{{< figure src="images/volumetric.png" width="500px" caption="Volumetric cuboids" >}}
 
 To understand more of the math used, go read my post on [Ray Tracing: The Rest of your life](../rt_rest_of_life).
 If you missed the post previous to this one (Ray Tracing in One Weekend), read it [here](../rt_one_weekend/)
