@@ -1,6 +1,6 @@
 baseURL: "https://siddharthchillale.github.io/"
 title: Siddharth C
-paginate: 5
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -48,9 +48,9 @@ params:
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "divide_square.svg"
-    favicon16x16: "divide_square.svg"
-    favicon32x32: "divide_square.svg"
+    favicon: "profile/puzzle.png"
+    favicon16x16: "profile/puzzle.png"
+    favicon32x32: "profile/puzzle.png"
     
 
   label:

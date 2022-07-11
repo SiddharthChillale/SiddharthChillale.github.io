@@ -7,15 +7,15 @@
 <meta name="robots" content="index, follow">
 <title>Corona Dashboard devlog | Siddharth C</title>
 <meta name="keywords" content="coding, data science, projects" />
-<meta name="description" content="My collection of things I find on my journeys through the internet.">
+<meta name="description" content="Ay ! I developed a COVID-19 dashboard.">
 <meta name="author" content="Siddharth">
 <link rel="canonical" href="https://siddharthchillale.github.io/projects/corona_dashboard/" />
 <meta name="google-site-verification" content="XYZabc" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.647713d2a27cb4be3fe04add2184b7f5f153aaf84ddfdbc3a05b8ece9a589476.css" integrity="sha256-ZHcT0qJ8tL4/4ErdIYS39fFTqvhN39vDoFuOzppYlHY=" rel="preload stylesheet" as="style">
 <link rel="preload" href="profile/puzzle.png" as="image">
-<link rel="icon" href="https://siddharthchillale.github.io/divide_square.svg">
-<link rel="icon" type="image/png" sizes="16x16" href="https://siddharthchillale.github.io/divide_square.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="https://siddharthchillale.github.io/divide_square.svg">
+<link rel="icon" href="https://siddharthchillale.github.io/profile/puzzle.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://siddharthchillale.github.io/profile/puzzle.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://siddharthchillale.github.io/profile/puzzle.png">
 <link rel="apple-touch-icon" href="https://siddharthchillale.github.io/apple-touch-icon.png">
 <link rel="mask-icon" href="https://siddharthchillale.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
@@ -45,10 +45,10 @@ if (!doNotTrack) {
 <meta property="og:description" content="Portfolio" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://siddharthchillale.github.io/projects/corona_dashboard/" />
-<meta property="og:image" content="https://siddharthchillale.github.io/projects/corona_dashboard/images/new_to_total%5Bupdated%5D.png" /><meta property="og:site_name" content="Siddharth C" />
+<meta property="og:image" content="https://siddharthchillale.github.io/projects/corona_dashboard/images/coronavirus.jpg" /><meta property="og:site_name" content="Siddharth C" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://siddharthchillale.github.io/projects/corona_dashboard/images/new_to_total%5Bupdated%5D.png" />
+<meta name="twitter:image" content="https://siddharthchillale.github.io/projects/corona_dashboard/images/coronavirus.jpg" />
 <meta name="twitter:title" content="Corona Dashboard devlog"/>
 <meta name="twitter:description" content="Portfolio"/>
 
@@ -140,12 +140,23 @@ if (!doNotTrack) {
 <header class="page-header"><div class="breadcrumbs"><a href="https://siddharthchillale.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://siddharthchillale.github.io/projects/">Projects</a></div>
   <h1>Corona Dashboard devlog</h1>
 </header>
-<div class="post-content"><h2 id="version-201---date--april-16-2020">Version 2.0.1 - Date : April 16, 2020<a hidden class="anchor" aria-hidden="true" href="#version-201---date--april-16-2020">#</a></h2>
+<div class="post-content"><p>It was around January 2019 when I heard of the rising cases of a deadly disease spreading in china. I was deep into studying data science and machine learning that time and lived and breathed on the Kaggle website. It was during this time that I found the dataset on the number of cases of COVID; people were already making kaggle notebooks on this data. I thought I had to jump on this train. Thus, I started a kaggle notebook with this dataset colected and made available by John Hopkins University. 
+I quickly prototyped a working chart and started making all types of diagrams I could make from this data. &ldquo;This is going to be a big deal&rdquo; I thought. I was surprised, confused and delusionally delighted that such an infectious virus hadn&rsquo;t made its way in India yet, especially considering that the country where it started was our neighbour. In fact, the US had reported early cases of COVID than India(though now I realise that it must have been started in India too but was not reported due to lack of intensive tesing done at that time). India had already set up travel restrictions to and fro China, so that might have delayed the spread.</p>
+<p>Anyway, I have digressed enough. I started making plans of converting this analytical notebook into a web app that could be statically hosted somewhere where it would automate the process of fetching data from JHU, processing the data and presenting it in a easy to understand dashboard. This is the start of that project which is now hosted on Heroku on <a href="https://covid-19-visual.herokuapp.com/">this link</a>.</p>
+<p>The dashboard shows 5 diagrams.</p>
+<ol>
+<li>Pie chart of the top 5 countries with highest total number of cases.</li>
+<li>Table showing the case data for the above top 5 countries.</li>
+<li>A graph of total confirmed covid cases against time.</li>
+<li>A graph of total death covid cases against time.</li>
+<li>A graph of new cases per total number of cases</li>
+</ol>
+<p>I used python for fetching and processing the data. Visualizing of data was done by the plotly library. The webapp is hosted on a heroku server.</p>
 <p><strong>Final</strong></p>
 <figure>
     <img loading="lazy" src="images/new_to_total[updated].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
+         alt="A rolling mean of the number of new cases against the total number of cases."/> <figcaption>
+            <p>A rolling mean of the number of new cases against the total number of cases.</p>
         </figcaption>
 </figure>
 
@@ -155,8 +166,8 @@ if (!doNotTrack) {
 <p><strong>Initial</strong></p>
 <figure>
     <img loading="lazy" src="images/new_to_total[old].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
+         alt="A graph that plots new cases per total number of cases"/> <figcaption>
+            <p>A graph that plots new cases per total number of cases</p>
         </figcaption>
 </figure>
 
@@ -167,18 +178,11 @@ if (!doNotTrack) {
 <li>Axes are plotted on logarithmic scale.</li>
 </ul>
 <hr>
-<h2 id="version-20---date-march-23-27-2020">Version 2.0   Date: March 23-27, 2020<a hidden class="anchor" aria-hidden="true" href="#version-20---date-march-23-27-2020">#</a></h2>
+<h3 id="version-15---date-march-23-27-2020">Version 1.5   Date: March 23-27, 2020<a hidden class="anchor" aria-hidden="true" href="#version-15---date-march-23-27-2020">#</a></h3>
 <figure>
     <img loading="lazy" src="images/dashboard[updated-1].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
-        </figcaption>
-</figure>
-
-<figure>
-    <img loading="lazy" src="images/dashboard[updated-2].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
+         alt="Look of the website uplifted using plotly."/> <figcaption>
+            <p>Look of the website uplifted using plotly.</p>
         </figcaption>
 </figure>
 
@@ -189,18 +193,18 @@ if (!doNotTrack) {
 <li>Added functionality of updating data in every refresh or at intervals of 6 hours.</li>
 </ul>
 <hr>
-<h2 id="version-10---date-march-12-18-2020">Version 1.0   Date: March 12-18, 2020<a hidden class="anchor" aria-hidden="true" href="#version-10---date-march-12-18-2020">#</a></h2>
+<h3 id="version-10---date-march-12-18-2020">Version 1.0   Date: March 12-18, 2020<a hidden class="anchor" aria-hidden="true" href="#version-10---date-march-12-18-2020">#</a></h3>
 <p><figure>
     <img loading="lazy" src="images/dashboard[old-1].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
+         alt="Pie chart of the top 5 countries with highest daily confirmed cases."/> <figcaption>
+            <p>Pie chart of the top 5 countries with highest daily confirmed cases.</p>
         </figcaption>
 </figure>
 
 <figure>
     <img loading="lazy" src="images/dashboard[old-2].png"
-         alt="Example of the created GitHub repo and url to clone it."/> <figcaption>
-            <p>Example of the created GitHub repo and url to clone it.</p>
+         alt="Graph showing the daily count of total confirmed cases."/> <figcaption>
+            <p>Graph showing the daily count of total confirmed cases.</p>
         </figcaption>
 </figure>
 </p>

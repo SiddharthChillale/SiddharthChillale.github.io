@@ -5,14 +5,50 @@
     <link>https://siddharthchillale.github.io/tags/graphics/</link>
     <description>Recent content in graphics on Siddharth C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Feb 2022 21:47:05 +0530</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cudafying ray tracing in one weekend</title>
+      <link>https://siddharthchillale.github.io/projects/rt_cuda/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_cuda/</guid>
+      <description>My understanding from porting Raytracing to Cuda</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing in One Weekend</title>
+      <link>https://siddharthchillale.github.io/projects/rt_one_weekend/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_one_weekend/</guid>
+      <description>My understanding from Ray Tracing in One Weekend.</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing: The Next Week</title>
+      <link>https://siddharthchillale.github.io/projects/rt_next_week/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_next_week/</guid>
+      <description>My understanding from Ray Tracing: The Next Week.</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing: The Rest of Your Life</title>
+      <link>https://siddharthchillale.github.io/projects/rt_rest_of_life/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_rest_of_life/</guid>
+      <description>My understanding from Ray Tracing: The Rest of Your Life.</description>
+    </item>
+    
     <item>
       <title>PathTracer: Global Illumination</title>
       <link>https://siddharthchillale.github.io/projects/pathtracer/</link>
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
       
       <guid>https://siddharthchillale.github.io/projects/pathtracer/</guid>
-      <description>My collection of things I find on my journeys through the internet.</description>
+      <description>A pathtracing course project.</description>
     </item>
     
   </channel>
