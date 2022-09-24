@@ -5,7 +5,7 @@
     <link>https://siddharthchillale.github.io/</link>
     <description>Recent content on Siddharth C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Handle git mistakes</title>
       <link>https://siddharthchillale.github.io/blog/git-mistakes/</link>
@@ -13,11 +13,11 @@
       
       <guid>https://siddharthchillale.github.io/blog/git-mistakes/</guid>
       <description>git status
-  git log
- --stat : log with the change stats.    git branch : shows all available branches.
- &amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;.    git ammend
- --amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message.    git checkout
- &amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
+git log
+--stat : log with the change stats. git branch : shows all available branches.
+&amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;. git ammend
+--amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message. git checkout
+&amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
     </item>
     
     <item>
@@ -26,10 +26,10 @@
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/bucket-list/</guid>
-      <description>Bucket List   C++ Game Programming (Binging):
+      <description>Bucket List C++ Game Programming (Binging):
 This is because I cannot learn something without having some knowledge of its application. I have to overcome the fear of C++ which I will do thanks to this.
 I&amp;rsquo;m learning it through this tutorial by Chilli Tomato Noodle. Currently, I&amp;rsquo;m just binging through it, consuming it like some Netflix Show, haha.
-  Making a Game using Godot Engine (MAJOR GOALS): Update [July 2020]: Realy proud that I completed this.</description>
+Making a Game using Godot Engine (MAJOR GOALS): Update [July 2020]: Realy proud that I completed this.</description>
     </item>
     
     <item>
@@ -38,9 +38,9 @@ I&amp;rsquo;m learning it through this tutorial by Chilli Tomato Noodle. Current
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/how-to-gain-experience/</guid>
-      <description>What to do to gain Experience   Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself.  How to know what the jobs require
- Job Descriptions Informational interview Linkedin Research  BE REALISTIC Once you know what the requirements are
- Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know.</description>
+      <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
+Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
+Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ I&amp;rsquo;m learning it through this tutorial by Chilli Tomato Noodle. Current
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/linkedin-tips/</guid>
-      <description>LinkedIn Tips Summary :  Market yourself with your elevator pitch Optimise LinkedIn profile components (summary and accomplishments) Describe effectively your work experience and projects Create connections participate in the content Your Aim — Raise visibilty  Important Points   Write a polite and short introduction  Hi ___&amp;lt;insert name here&amp;gt;,I am Siddharth, a student pursuing Masters in computer science at University at Buffalo.I would love to hear more about your work at ___&amp;lt;insert their jobs here&amp;gt;.</description>
+      <description>LinkedIn Tips Summary : Market yourself with your elevator pitch Optimise LinkedIn profile components (summary and accomplishments) Describe effectively your work experience and projects Create connections participate in the content Your Aim — Raise visibilty Important Points Write a polite and short introduction Hi ___&amp;lt;insert name here&amp;gt;,I am Siddharth, a student pursuing Masters in computer science at University at Buffalo.I would love to hear more about your work at ___&amp;lt;insert their jobs here&amp;gt;.</description>
     </item>
     
     
