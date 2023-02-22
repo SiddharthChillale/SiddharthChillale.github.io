@@ -1,7 +1,7 @@
 ---
 title: "Ray Tracing: The Rest of Your Life"
 date: 2022-07-02T19:14:01-04:00
-draft: false
+draft: true
 summary: "My understanding from Ray Tracing: The Rest of Your Life."
 categories: [Graphics]
 tags: [coding, graphics, projects]

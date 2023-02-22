@@ -57,7 +57,7 @@ how rotation and translation is handled is very unintuitive for me. now it makes
 Volumetric objects can be thought of as materials where light enters the material and changes direction and intensity the further inside it is in that said material. 
 {{< figure src="images/volumetric.png" width="500px" caption="Volumetric cuboids" >}}
 
-To understand more of the math used, go read my post on [Ray Tracing: The Rest of your life](../rt_rest_of_life).
+<!-- To understand more of the math used, go read my post on [Ray Tracing: The Rest of your life](../rt_rest_of_life). -->
 If you missed the post previous to this one (Ray Tracing in One Weekend), read it [here](../rt_one_weekend/)
 > A link to my code is here: [SiddharthChillale/Ray_Tracer](https://github.com/SiddharthChillale/Ray_Tracer)
 >
