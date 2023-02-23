@@ -43,15 +43,6 @@
     </item>
     
     <item>
-      <title>Ray Tracing: The Rest of Your Life</title>
-      <link>https://siddharthchillale.github.io/projects/rt_rest_of_life/</link>
-      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      
-      <guid>https://siddharthchillale.github.io/projects/rt_rest_of_life/</guid>
-      <description>My understanding from Ray Tracing: The Rest of Your Life.</description>
-    </item>
-    
-    <item>
       <title>Rendering Pipeline of Unreal Engine</title>
       <link>https://siddharthchillale.github.io/blog/unreal_rendering/</link>
       <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
