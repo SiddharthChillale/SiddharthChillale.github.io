@@ -22,7 +22,7 @@ In my free time, I continue to improve my knowledge on graphics programming.
 
 >**Contact me on**
 >
->- [email me](mailto:schillal@buffalo.edu)
+>- [Email](mailto:siddharth.chillale@gmail.com)
 >- [LinkedIn](https://www.linkedin.com/in/schillal)
 >- [Github](https://github.com/siddharthchillale)
 >
