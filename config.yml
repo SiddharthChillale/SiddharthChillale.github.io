@@ -63,8 +63,8 @@ params:
     enabled: true # needs to be explicitly set
     title_f: Siddharth
     title_l:  Chillale
-    subtitle: "Software Developer | Graphics"
-    imageUrl: "/profile/SiddharthChillale.jpg"
+    subtitle: "Software Developer | C++, Multithreading, Graphics"
+    imageUrl: "/profile/SiddharthChillale_square.jpg"
     # imageWidth: 120
     # imageHeight: 120
     imageTitle: my image
