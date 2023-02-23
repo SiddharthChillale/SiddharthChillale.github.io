@@ -70,7 +70,7 @@ params:
     imageTitle: my image
     buttons:
       - name: Resume 📥 
-        url: /docs/siddharth-chillale-resume.pdf
+        url: /docs/siddharth_chillale_resume.pdf
       - name: Projects 📑
         url: projects
 
@@ -141,7 +141,7 @@ menu:
   main:
     - identifier: Resume
       name: Resume 📥
-      url: /docs/siddharth-chillale-resume.pdf
+      url: /docs/siddharth_chillale_resume.pdf
       weight: 1
     - identifier: Projects
       name: Projects 📑
