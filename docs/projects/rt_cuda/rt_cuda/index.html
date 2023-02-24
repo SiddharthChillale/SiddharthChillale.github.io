@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Cudafying ray tracing in one weekend | Siddharth C</title>
-<meta name="keywords" content="coding, graphics, projects" />
+<meta name="keywords" content="coding, graphics, GPU" />
 <meta name="description" content="My understanding from porting Raytracing to Cuda">
 <meta name="author" content="Siddharth Chillale">
 <link rel="canonical" href="https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/" />
@@ -46,7 +46,7 @@ if (!doNotTrack) {
 <meta property="og:url" content="https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/" />
 <meta property="og:image" content="https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/images/rt_cuda/nv_cuda.png" /><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2022-07-02T19:14:01-04:00" />
-<meta property="article:modified_time" content="2023-02-24T10:01:07-05:00" /><meta property="og:site_name" content="Siddharth C" />
+<meta property="article:modified_time" content="2023-02-24T11:09:01-05:00" /><meta property="og:site_name" content="Siddharth C" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/images/rt_cuda/nv_cuda.png" />
@@ -82,13 +82,13 @@ if (!doNotTrack) {
   "name": "Cudafying ray tracing in one weekend",
   "description": "My understanding from porting Raytracing to Cuda",
   "keywords": [
-    "coding", "graphics", "projects"
+    "coding", "graphics", "GPU"
   ],
   "articleBody": "CUDA is a library for using Nvidia GPU cores for parallelising code, but it’s multi purpose and is not tailored only towards graphics applications. Hence, the API is low level and memory needs to be managed responsibly by the developer themselves. This makes the code a pain to write and the performance obtained is not much improvement over the software multithreading option (although I admit that this code is not a good bench mark for checking performance between CUDA and CPU parallelism).\nPrerequisites for this post : This post is for accelerating the raytracing in one weekend code using CUDA, which means you need to be familiar with the raytracer code used in “raytracing in one weeekend”. I mostly followed the excellent guide on Accelerating Raytracing using CUDA presented in Nvidia’s blog.\nwhat Cuda is expert at is talking to the GPU and allocating resources that can be used either by GPU or GPU and CPU both. Hence, setting up a Common Frame Buffer is important.\nSystem Properties:\n Cuda 11.7 Visual Studio 2022 community edition Device Query  Setup - Install the Cuda toolkit which comes with the Cuda library, debugger tools, optimization tools, Cuda c++ compiler and runtime library. To make the C++ code compatible with cuda compiler, the C++ file where the cuda code is used must have extension .cu. During the setup for Cuda in Visual Studio, I encountered some problems, the solutions to which are listed below.\n There should be a CUDA C/C++ tab in the project properties. If not then go to Build Dependencies by right clicking on the Project in the Solution View, and make sure the CUDA 11.7 (or whatever version of CUDA you have) box is selected True. Also make sure that you have set your runtime lib to MT in Linker  Code Generation tab in Project Properties. When you build the code, the compiler may throw an error where VS cannot find CUDA 11.7rt. In that case, you need to find the device compatibility version by running the Device Query sample from the CUDA samples. In my case, my device is 5.0 compatible. Then, add “compute_50, sm_50” (50 because 5.0 in my case ) in CUDA C/C++  Device  Code Generation tab in Project Properties.  After following the above steps, the setup was done and my code built without errors. Now, I followed through with the raytracing with CUDA guide by Nivdia, and made the following observations\n Using printf() in the CUDA segment crashed my PC entirely. It did not just crashed the raytracing software, but just straight hung up my laptop (I had to forcefully shut it down). My guess is that since control was not handed to CPU by the GPU implicitly when printf() was called inside the GPU segment of the CUDA code. This made me be wary about experimenting with CUDA as some crashes could potentially be non-recoverable. This observation is a followup on the previous that STL library cannot be used in CUDA code, which entails that STL smart pointers cannot be used which means you have to resort to passing objects via dumb pointers or even double pointers. Cuda provides dynamic memory allocation through cudaMalloc() and cudaFree() but this introduces a danger as it becomes the developer’s responsibilty to manage freeing of resources. Having to deal with these make the code messy to deal with.  ",
   "wordCount" : "561",
   "inLanguage": "en",
   "image":"https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/images/rt_cuda/nv_cuda.png","datePublished": "2022-07-02T19:14:01-04:00",
-  "dateModified": "2023-02-24T10:01:07-05:00",
+  "dateModified": "2023-02-24T11:09:01-05:00",
   "author":{
     "@type": "Person",
     "name": "Siddharth Chillale"
@@ -215,7 +215,7 @@ To make the C++ code compatible with cuda compiler, the C++ file where the cuda 
     <ul class="post-tags">
       <li><a href="https://siddharthchillale.github.io/tags/coding/">coding</a></li>
       <li><a href="https://siddharthchillale.github.io/tags/graphics/">graphics</a></li>
-      <li><a href="https://siddharthchillale.github.io/tags/projects/">projects</a></li>
+      <li><a href="https://siddharthchillale.github.io/tags/gpu/">GPU</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/">
@@ -233,7 +233,7 @@ To make the C++ code compatible with cuda compiler, the C++ file where the cuda 
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share Cudafying ray tracing in one weekend on twitter"
-        href="https://twitter.com/intent/tweet/?text=Cudafying%20ray%20tracing%20in%20one%20weekend&amp;url=https%3a%2f%2fsiddharthchillale.github.io%2fprojects%2frt_cuda%2frt_cuda%2f&amp;hashtags=coding%2cgraphics%2cprojects">
+        href="https://twitter.com/intent/tweet/?text=Cudafying%20ray%20tracing%20in%20one%20weekend&amp;url=https%3a%2f%2fsiddharthchillale.github.io%2fprojects%2frt_cuda%2frt_cuda%2f&amp;hashtags=coding%2cgraphics%2cGPU">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

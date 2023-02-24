@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>data science on Siddharth C</title>
-    <link>https://siddharthchillale.github.io/tags/data-science/</link>
-    <description>Recent content in data science on Siddharth C</description>
+    <title>automation on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/tags/automation/</link>
+    <description>Recent content in automation on Siddharth C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Corona Dashboard devlog</title>
       <link>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</link>

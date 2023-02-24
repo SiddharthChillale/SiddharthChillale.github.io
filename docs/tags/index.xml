@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 12 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>coding</title>
-      <link>https://siddharthchillale.github.io/tags/coding/</link>
-      <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
-      
-      <guid>https://siddharthchillale.github.io/tags/coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>graphics</title>
       <link>https://siddharthchillale.github.io/tags/graphics/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
@@ -25,20 +16,74 @@
     </item>
     
     <item>
-      <title>projects</title>
-      <link>https://siddharthchillale.github.io/tags/projects/</link>
+      <title>Rendering</title>
+      <link>https://siddharthchillale.github.io/tags/rendering/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
       
-      <guid>https://siddharthchillale.github.io/tags/projects/</guid>
+      <guid>https://siddharthchillale.github.io/tags/rendering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coding</title>
+      <link>https://siddharthchillale.github.io/tags/coding/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>https://siddharthchillale.github.io/tags/gpu/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raytracing</title>
+      <link>https://siddharthchillale.github.io/tags/raytracing/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/raytracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unreal</title>
+      <link>https://siddharthchillale.github.io/tags/unreal/</link>
+      <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/unreal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://siddharthchillale.github.io/tags/automation/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data science</title>
       <link>https://siddharthchillale.github.io/tags/data-science/</link>
-      <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>https://siddharthchillale.github.io/tags/flask/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/tags/flask/</guid>
       <description></description>
     </item>
     
