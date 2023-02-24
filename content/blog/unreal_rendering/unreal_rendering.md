@@ -8,16 +8,11 @@ tags: [Unreal, Rendering]
 ShowToc: true
 cover:
   image: "/images/ue_rendering/ue_rendering_schematic.png"
-  alt: "dashboard[updated-1].png"
   caption: "A chart showing covid trends"
   relative: true
 ---
 
-Below is an overview of the rendering pipeline that the Unreal Engine uses for rendering a single frame onto the screen. The following summary is written down as my understanding of the render engine of unreal given in the talk "Rendering Kickstart" on the Unreal Engine Community.
-
-* Goal of the Unreal pipeline 
-    - best visuals and best performance on all targets and platforms
-    - supports both forward and deferred rendering
+The Unreal Engine utilizes a rendering pipeline to generate high-quality visuals while maintaining optimal performance across all platforms. This pipeline supports both forward and deferred rendering, and the following overview is based on the ["Rendering Kickstart"](https://www.youtube.com/watch?v=5m0Id2iNOoE&t=2664s&ab_channel=WilliamJames) talk from the Unreal Engine Community Talks.
 
 # BEFORE START OF RENDERING
 
@@ -119,6 +114,7 @@ Below is an overview of the rendering pipeline that the Unreal Engine uses for r
 
 
 ### Advices 
+I haven't completely understood how these are used, but I'll list them below if ever required.
   - Shadow Rendering
   - Managing tris amd draw calls
   - Translucency
