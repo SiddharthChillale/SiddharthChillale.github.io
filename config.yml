@@ -156,13 +156,3 @@ menu:
       url: /about/
       weight: 4
     
-    
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences:  true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
