@@ -2,10 +2,7 @@
 title: "My Journey into learning Direct3D 11"
 date: 2022-07-12T19:14:01-04:00
 draft: false
-tags:
-  - coding
-  - graphics
-  - projects
+tags: [graphics, Rendering]
 cover:
   image: "/images/directx_adventures/dx_3df.gif"
   caption: "A showcase of the 3D rasteriser"

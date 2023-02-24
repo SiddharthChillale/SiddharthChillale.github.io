@@ -4,7 +4,7 @@ author: Siddharth
 date: 2020-04-10
 summary: Ay ! I developed a COVID-19 dashboard.
 categories: [Graphics]
-tags: [coding, data science, projects]
+tags: [flask, data science, automation]
 ShowToc: true
 cover:
   image: "images/coronavirus.jpg"

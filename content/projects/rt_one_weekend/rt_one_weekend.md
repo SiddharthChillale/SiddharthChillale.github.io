@@ -4,7 +4,7 @@ date: 2022-07-02T19:14:01-04:00
 draft: false
 summary: My understanding from Ray Tracing in One Weekend.
 categories: [Graphics]
-tags: [coding, graphics, projects]
+tags: [graphics, raytracing]
 ShowToc: true
 cover:
   image: "/images/rt_one_weekend/rt_weekend.png"
@@ -120,7 +120,7 @@ private:
 
 At this point, we have a basic offline ray tracer which only generates image files. The program runs on a single processor and a single thread. As such, a simple to complex scene takes up ~(5 to 15)mins to generate a 500x500 image.
 
-To read how we improve performance, go read my post on [Ray Tracing: The Next Week](../rt_next_week).
+To read how we improve performance, go read my post on [Ray Tracing: The Next Week](/projects/rt_next_week/rt_next_week).
 
 > A link to my code is here: [SiddharthChillale/Ray_Tracer](https://github.com/SiddharthChillale/Ray_Tracer)
 >

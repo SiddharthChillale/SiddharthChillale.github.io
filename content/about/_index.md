@@ -30,9 +30,9 @@ draft: false
 **📝 Latest Blog Posts**
 
 <!-- BLOG-POST-LIST:START -->
-- [Ray Tracing in One Weekend](https://siddharthchillale.github.io/projects/rt_one_weekend/)
-- [Rendering Pipeline of Unreal Engine](https://siddharthchillale.github.io/blog/unreal_rendering/)
-- [Ray Tracing: The Next Week](https://siddharthchillale.github.io/projects/rt_next_week/)
+- [Ray Tracing in One Weekend](/projects/rt_one_weekend/rt_one_weekend)
+- [Rendering Pipeline of Unreal Engine](/blog/unreal_rendering/unreal_rendering)
+- [Ray Tracing: The Next Week](/projects/rt_next_week/rt_next_week)
 - [Other Blogs](/blog/)
 <!-- BLOG-POST-LIST:END -->
 

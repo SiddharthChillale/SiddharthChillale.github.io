@@ -4,7 +4,7 @@ date: 2022-02-05T21:47:05+05:30
 draft: false
 summary: A pathtracing course project.
 categories: [Graphics]
-tags: [coding, graphics, projects]
+tags: [graphics, raytracing]
 ShowToc: true
 cover:
   image: "/images/pathtracer/32_samples_doda_1.png"
@@ -110,4 +110,6 @@ Plus, the current code works fine for area lights and point lights. I have inclu
 using both point lights and area lights
 
 {{< figure align=center src="/images/pathtracer/1024_samples_doda.png" width="600px" caption="Example of 1024 samples on cornel box." >}}
+
+I followed this up with the Ray Tracing in One Weekend series to fill up void in my basic knowledge. You can follow it here : [Ray Tracing in One Weekend](/projects/rt_one_weekend/rt_one_weekend)
 

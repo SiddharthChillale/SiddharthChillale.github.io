@@ -4,7 +4,7 @@ date: 2022-07-02T19:14:01-04:00
 draft: false
 summary: "My understanding from porting Raytracing to Cuda"
 categories: [Graphics]
-tags: [coding, graphics, projects]
+tags: [coding, graphics, GPU]
 ShowToc: true
 cover:
   image: "/images/rt_cuda/nv_cuda.png"

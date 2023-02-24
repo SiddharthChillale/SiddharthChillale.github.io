@@ -4,7 +4,7 @@ date: 2022-07-02T19:14:01-04:00
 draft: false
 summary: "My understanding from Ray Tracing: The Next Week."
 categories: [Graphics]
-tags: [coding, graphics, projects]
+tags: [graphics, raytracing]
 ShowToc: true
 cover:
   image: "/images/rt_next_week/rt_next_week.png"
@@ -57,7 +57,7 @@ Volumetric objects can be thought of as materials where light enters the materia
 {{< figure align=center src="/images/rt_next_week/volumetric.png" width="500px" caption="Volumetric cuboids" >}}
 
 <!-- To understand more of the math used, go read my post on [Ray Tracing: The Rest of your life](../rt_rest_of_life). -->
-If you missed the post previous to this one (Ray Tracing in One Weekend), read it [here](../rt_one_weekend/)
+If you missed the post previous to this one (Ray Tracing in One Weekend), read it [here](/projects/rt_one_weekend/rt_one_weekend)
 > A link to my code is here: [SiddharthChillale/Ray_Tracer](https://github.com/SiddharthChillale/Ray_Tracer)
 >
 > link to the original book is here : [Ray Tracing in One Weekend—The Book Series](https://raytracing.github.io/)

@@ -4,7 +4,7 @@ date: 2022-02-23T21:47:05+05:30
 draft: false
 summary: A summary of the Rendering pipeline in Unreal Engine.
 categories: [Graphics]
-tags: [coding, data science, projects]
+tags: [Unreal, Rendering]
 ShowToc: true
 cover:
   image: "/images/ue_rendering/ue_rendering_schematic.png"
