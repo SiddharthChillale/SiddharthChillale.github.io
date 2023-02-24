@@ -5,7 +5,21 @@
     <link>https://siddharthchillale.github.io/blog/</link>
     <description>Recent content in Blogs on Siddharth C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Feb 2022 21:47:05 +0530</lastBuildDate><atom:link href="https://siddharthchillale.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 19:29:20 -0500</lastBuildDate><atom:link href="https://siddharthchillale.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primitives in C&#43;&#43; for Multithreading</title>
+      <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
+      <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
+      <description>Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above).
+std::mutex   allows a thread to modify a shared variable.
+std::mutex
+  must be released by the same thread that locks it.
+  other threads who try to acquire the lock are blocked
+  other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken.</description>
+    </item>
+    
     <item>
       <title>Rendering Pipeline of Unreal Engine</title>
       <link>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</link>

@@ -5,7 +5,21 @@
     <link>https://siddharthchillale.github.io/</link>
     <description>Recent content on Siddharth C</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 19:29:20 -0500</lastBuildDate><atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primitives in C&#43;&#43; for Multithreading</title>
+      <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
+      <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
+      <description>Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above).
+std::mutex   allows a thread to modify a shared variable.
+std::mutex
+  must be released by the same thread that locks it.
+  other threads who try to acquire the lock are blocked
+  other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken.</description>
+    </item>
+    
     <item>
       <title>My Journey into learning Direct3D 11</title>
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>

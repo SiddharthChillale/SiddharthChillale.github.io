@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://siddharthchillale.github.io/blog/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
+    <loc>https://siddharthchillale.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
+    <loc>https://siddharthchillale.github.io/tags/multithreading/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
+    <loc>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
+    <loc>https://siddharthchillale.github.io/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
+    <loc>https://siddharthchillale.github.io/tags/</loc>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
+  </url><url>
     <loc>https://siddharthchillale.github.io/tags/graphics/</loc>
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
   </url><url>
@@ -12,16 +30,10 @@
     <lastmod>2023-02-24T11:22:06-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/tags/rendering/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
-  </url><url>
-    <loc>https://siddharthchillale.github.io/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
-  </url><url>
-    <loc>https://siddharthchillale.github.io/tags/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/categories/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/tags/coding/</loc>
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
@@ -33,7 +45,7 @@
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/categories/graphics/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</loc>
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
@@ -44,14 +56,11 @@
     <loc>https://siddharthchillale.github.io/tags/raytracing/</loc>
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
   </url><url>
-    <loc>https://siddharthchillale.github.io/blog/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
-  </url><url>
     <loc>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/tags/unreal/</loc>
-    <lastmod>2023-02-24T11:22:06-05:00</lastmod>
+    <lastmod>2023-02-24T11:44:11-05:00</lastmod>
   </url><url>
     <loc>https://siddharthchillale.github.io/about/</loc>
     <lastmod>2023-02-24T11:09:01-05:00</lastmod>
