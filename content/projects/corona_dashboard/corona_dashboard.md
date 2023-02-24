@@ -7,9 +7,9 @@ categories: [Graphics]
 tags: [flask, data science, automation]
 ShowToc: true
 cover:
-  image: "images/coronavirus.jpg"
-  alt: "dashboard[updated-1].png"
-  caption: "A chart showing covid trends"
+  image: "/images/corona_dashboard/coronavirus.jpg"
+  alt: "Artist impression of coronavirus"
+  caption: "A true to life image of a very deadly virus /s"
   relative: true
 ---
 
