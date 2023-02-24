@@ -28,30 +28,30 @@ Below is my journey through all three books:
 // I'm not writing the entire class, but you can use this function. 
 // m_buffer is the image buffer where the pixel colors are stored after raytracing is done
 
-	void save(const char* filepath) const {
-    
-    // filepath is relative to the $WorkingDir 
-    // (directory where the vcproj file is stored)
-		FILE* pFile = fopen(filepath, "wb");
-		//_ASSERT(f);
-		putc(0, pFile);
-		putc(0, pFile);
-		putc(2, pFile);                         /* uncompressed RGB */
-		putc(0, pFile); putc(0, pFile);
-		putc(0, pFile); putc(0, pFile);
-		putc(0, pFile);
-		putc(0, pFile); putc(0, pFile);           /* X origin */
-		putc(0, pFile); putc(0, pFile);           /* y origin */
-		putc((m_img_width & 0x00FF), pFile);
-		putc((m_img_width & 0xFF00) / 256, pFile);
-		putc((m_img_height & 0x00FF), pFile);
-		putc((m_img_height & 0xFF00) / 256, pFile);
-		putc(24, pFile);                        /* 24 bit bitmap */
-		putc(0, pFile);
+void save(const char* filepath) const {
 
-		fwrite(m_buffer, channels, m_img_width * m_img_height, pFile);
-		fclose(pFile);
-	}
+// filepath is relative to the $WorkingDir 
+// (directory where the vcproj file is stored)
+	FILE* pFile = fopen(filepath, "wb");
+	//_ASSERT(f);
+	putc(0, pFile);
+	putc(0, pFile);
+	putc(2, pFile);                         /* uncompressed RGB */
+	putc(0, pFile); putc(0, pFile);
+	putc(0, pFile); putc(0, pFile);
+	putc(0, pFile);
+	putc(0, pFile); putc(0, pFile);           /* X origin */
+	putc(0, pFile); putc(0, pFile);           /* y origin */
+	putc((m_img_width & 0x00FF), pFile);
+	putc((m_img_width & 0xFF00) / 256, pFile);
+	putc((m_img_height & 0x00FF), pFile);
+	putc((m_img_height & 0xFF00) / 256, pFile);
+	putc(24, pFile);                        /* 24 bit bitmap */
+	putc(0, pFile);
+
+	fwrite(m_buffer, channels, m_img_width * m_img_height, pFile);
+	fclose(pFile);
+}
 {{< / highlight >}}
 
 1. Ray Tracing involves generating a ray which originates from the camera in the direction of the pixel on the screen. This ray may or may not intersect our geometry scene. It helps to imagine that the camera is on the world origin (0,0,0) and the screen is at an unit distance away in the direction the camera is facing. The camera follows the right hand coordinates system are such that the -Z axis is the direction where our camera is facing. The screen space is generally normalized to -1, 1 in X and Y axes, but it is not followed in this walkthrough.
