@@ -10,9 +10,8 @@ cover:
   relative: true
 ---
 
-Following is a short and concise overview of the synchronization primitives provided in the C++ STL (C++ 20 and above). 
 
-Below are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn't know how they interoperate with other "CS thingies". For example, during my Masters my professor asked a question "If my computer just runs one thread at a time, is it necessary to ensure synchronization ?" and this befuddled me. I wondered if the question makes any sense and why are we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One of the ways, I'm handling this is through writing and practice of solving multithreading problems. Because, writing solidifies my views and understanding.
+There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn't know how they interoperate with other "CS thingies". For example, when one of my professor asked a question "If a computer just runs one thread at a time, is it necessary to ensure synchronization ?", it befuddled me. I wondered if the question made any sense and why were we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One method to solidify our thoughts is to write about it. Hence this article. 
 
 Understanding the above question opens up many aspects of concurrent programming.  Here we will approach the synchronization primitives made available to use in the STL (C++ 20 and above).
 ## std::mutex (from C++ 11)
@@ -57,6 +56,8 @@ The main thread doesn't know what happened to the fetcher thread or how long it'
 
 This means you want some kind of mechanism to handle the order of execution to be such that main displays only when fetcher is done its job. This leads to the process of "*Synchronizing*" the threads.
 Following are some thingies made available by the C++ STL to make this power of synchronization available to programmers.
+
+{{< figure align=center src="/images/multithreading_primitives/prim_comp.png" caption="Circumstances which benefit from a particular primitive." >}}
 
 ## std::condition_variable (aka cv)
  1. has a queue that holds the waiting threads blocked due to some condition on the shared variable.
