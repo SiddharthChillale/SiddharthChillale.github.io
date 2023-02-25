@@ -2,6 +2,7 @@
 Title: Things I plan to do in the Future
 Date: 2020-11-22
 Author: Siddharth Chillale
+draft: true
 ---
 ###  Bucket List 
 

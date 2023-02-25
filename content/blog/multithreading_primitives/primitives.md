@@ -4,64 +4,96 @@ date: 2023-02-23T19:29:20-05:00
 draft: false
 tags: [multithreading, C++]
 showToc: true
+cover:
+  image: "/images/multithreading_primitives/multithreaded.png"
+  caption: "Tied up in threads"
+  relative: true
 ---
 
 Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above). 
 
-## std::mutex 
-1. allows a thread to modify a shared variable.
+Below are some explanantions on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn't know how they interoperate with other "CS thingies". For example, during my Masters my professor asked a question "If my computer just runs one thread at a time, is it necessary to ensure synchronisation ?" and this befuddled me. I wondered if the question makes any sense and why are we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One of the ways, I'm handling this is through writing and practice of solving multithreading problems. Because, writing solidifies my views and understanding.
+
+Understanding the above question opens up many aspects of concurrent programming.  Here we will approach the synchronisation primitives made available to use in the STL (C++ 20 and above).
+## std::mutex (from C++ 11)
+available in header `<mutex>`
+[cppreference](https://en.cppreference.com/w/cpp/thread/mutex)
+
+*Used generally for Exclusion rather than Ordering.*
+
+1. allows a thread to modify a shared variable.  
+2. **Must be released by the same thread that locks it**. If not released, then there's no way to allow other threads depending on it to run. Ultimately, the process (mostly the application) has to exit to ragain control.
+3. other threads who try to acquire the lock are blocked. What does it mean when a thread is said to be blocked ? The OS uses certain scheduling techniques(FCFS, round robin, MLFQS, etc) to schedule the time certain threads are run. When a thread X is said to be blocked, the thread doesn't start executing even when the OS schedules it run. This is the reason, that even when a single thread is run at a time, it is necessary to ensure synchronisation. There's a possibility that when a thread is executing in its critical section, it is put to the back of the scheduling queue by the OS; and at the same time another thread can run its own critical section. There is no gurantee to make a thread run entirely on its own without being interrupted by the OS, but there are ways to increase the probability of this particular thread being run the most number of times [^1]. In any case, it is evident that even in a computer where a single thread is executed at a time, it is necessary to ensure synchronisation. Remember, that issue of synchronisation pops up when you are trying to make a program run by multiple threads and if these threads share some data between them.
+4. Other threads can avoid being blocked by using `try_lock`. This tries to own a mutex, but is not blocked if mutex is already taken. This allows the attempting thread to do somthing else while waiting for the lock to release. This means that when a thread is allowed to work by the OS scheduler, it'll continue with some other work untill the mutex is made available. This is useful, because when though a thread is blocked, the OS has alloted some time units for this thread to work in. This leads to the thread just waiting for the mutex to be free when it could do some other work. This effect is called "busy waiting".
+5. Normally, mutexes are never used in their raw format, they are used along with a lock. C++ STL gives you multiple ways to use a mutex, through `std::lock_guard`, `std::unique_lock` and `std::scoped_lock`. 
+6. If the shared variables are simple primitive data items then C++ gives you the std::atomic. std::atomic can be used for cpp data types or even shared/weak pointers. 
     
-    [std::mutex](https://en.cppreference.com/w/cpp/thread/mutex)
-    
-2. must be released by the same thread that locks it.
-3. other threads who try to acquire the lock are blocked
-4. other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken. This allows the attempting thread to do somthing else while waiting for the lock to release.
-5. To achieve mutual exclusion in cpp, you can use std::mutex but an std::atomic also works fine. std::atomic can be used for cpp data types or even shared/weak pointers. 
-    
-    [std::atomic](https://en.cppreference.com/w/cpp/atomic/atomic)
+    [std::atomic cppreference](https://en.cppreference.com/w/cpp/atomic/atomic)
         
 ## std::shared_mutex
- 1. allows multiple threads shared access if are only going to read from the shared data
- 2. writers have exclusive access. When lock is acquired by writers, readers and other writers are blocked.
- 3. lock had to be released by the same thread that acquires it.
+ 1. allows multiple threads shared access if are only going to read from the shared data. Nothing much to it, it works similar to how mutexes are supposed to work except with more flexibility than just blocking any thread. 
+ 2. Two types of locking mechanisms are provided : `lock()` and `lock_shared()` and their corresponding unlock() calls. 
+    1. `lock()` allows locking the access to just readers (i.e if you are reading only from the shared data store).
+    1. `lock_shared()` allows locking the access to readers and writers (i.e if you are writing to the shared data store).
+ 3. writers have exclusive access. When lock is acquired by writers, readers and other writers are blocked.
+ 4. **lock had to be released by the same thread that acquires it.**
  
- [std::shared_mutex](https://en.cppreference.com/w/cpp/thread/shared_mutex)
+ [std::shared_mutex cppreference](https://en.cppreference.com/w/cpp/thread/shared_mutex)
     
 ## std::scoped_lock
- 1. provides a convenient way of owning a mutex through cpp’s RAII style. lock is released when execution goes out of scope.
- 2. can hold multiple nested mutexes.
+ 1. provides a convenient way of owning a mutex through cpp’s RAII style. **lock is released when execution goes out of scope.**.
+ 2. This is not only to prevent developers' mistakes of forgetting to release the mutex but also to safeguard against exceptions.
+ 3. can hold multiple nested mutexes.
      
-     [std::scoped_lock](https://en.cppreference.com/w/cpp/thread/scoped_lock)
+    [std::scoped_lock cppreference](https://en.cppreference.com/w/cpp/thread/scoped_lock)
         
-## std::condition variable
- 1. has a queue that holds the waiting threads blocked on some condition on the shared variable. 
+------
+
+💡 Up until now, you only had to worry about *Exclusion*. i.e. two threads not changing the same shared variable. 
+But what if you want more control over the order of threads executed. Suppose you have an application where you wish to display some data that is to be fetched from some an online repo, you have a function that does this fetching. 
+
+Now you have heard about this new thing called multithreading and want to be very efficient with your time, so you assign another thread to fetch this data. You now have two threads, main and fetcher threads. you delegate the fetcher to fetch the data and allow your main to display the data. but how can the main display the data when the fetcher is made to sleep by the OS. 
+The main thread doesn't know what happened to the fetcher thread or how long it'll take to get the data. While the fetcher is sleeping, the main thread displays nothing and probably exits. This is a problem because you have to make the main thread wait until the fetcher thread does its job. 
+
+This means you want some kind of mechanism to handle the order of execution to be such that main displays only when fetcher is done its job. This leads to the process of "*Synchronising*" the threads.
+Following are some thingies made available by the C++ STL to make this power of synchronisation available to programmers.
+
+## std::condition_variable (aka cv)
+ 1. has a queue that holds the waiting threads blocked due to some condition on the shared variable.
  2. Threads are blocked until another thread both modifies the shared condition and notifies the condition_variable.
- 3. Requires a mutex to work. specifically std::unique_lock<std::mutex>. One condition variable should work only with single mutex. Whereas, multiple condition variables can share a single mutex. 
- 4. Thread that wants to change the shared variable must acquire a mutex, modify the shared variable and then release the mutex, and notify cv. After notifying cv, the cv checks if the condition predicate is true and unblocks a waiting thread if it is true.
- 5. the example given in cpp reference doc is good.
+ 3. Requires a mutex to work. specifically `std::unique_lock<std::mutex>`. One condition variable should work only with single mutex. Whereas, multiple condition variables can share a single mutex. The cv queue is handled by the condition variable object, and has nothing to do with the mutex associated with the cv.
+ 4. To block a thread on some condition, use `cv.wait( lock, function )` . The *function* does the checking of a shared variable, and you require a *lock* to read this variable as it is shared between threads. 
+ 5. The Thread that wants to change the shared variable must acquire a mutex, modify the shared variable if it wants and then release the mutex, and notify cv. After notifying cv, the cv checks if the condition predicate is true and unblocks a waiting thread if it is true.
+ 6. The example given in cpp reference doc is good and I'd recommend to give it a read an undestand what's happening.
      
-     [std::condition_variable](https://en.cppreference.com/w/cpp/thread/condition_variable)
+    [std::condition_variable cppreference](https://en.cppreference.com/w/cpp/thread/condition_variable)
         
 ## std::counting_semaphore, std::binary_semaphore
- 1. has a mutex, a cv, and count c. in std::counting_semaphore need only to mention count c for costructing a c_semaphore. Think of this as multiple ports on a charger.
- 2. a binary semaphore is when the counting c is 1. Which allows only one thread to use the shared resource. This differs from a mutex in the sense of ownership. Mutex has to be released by the calling thread as it is owned by the calling thread. A binary_sempahore can be released by other threads even if they are not the owner of that lock.
- 3. Used mainly for signalling/notifying rather than mutual exclusion
- 4. is similar to cv in sense that threads wait on the condition of c becoming > 0.
+ 1. Think of a semaphore as a charging brick with multiple ports. The number of ports is analogous to the count in a counting semaphore. You can only attach a fixed number of devices to the ports. Other devices that wish to connect to these ports must wait for ports to open up.
+ 2. A counting semaphore has a mutex, a condition variable, and count c. In std::counting_semaphore one needs only to mention count c for costructing a c_semaphore.
+ 3. A binary semaphore is when the counting c is 1. Which allows only one thread to use the shared resource. This differs from a mutex in the sense of ownership. Mutex has to be released by the calling thread as it is owned by the calling thread. A binary_sempahore can be released by other threads even if they are not the owner of that lock.
+ 4. This is similar to a cv in the sense that threads wait on the condition of c becoming > 0.
+ 5. Used mainly for signalling/notifying rather than mutual exclusion. How ? By blocking other semaphores that are required by the other threads. A little rude maybe but it works. Semaphores are useful for having that particular order in execution of threads. Allowing access to a resource is done by a mutex/lock, making it efficient to determine (who among those allowed) gets the resource is done by a condition variable, and having a certain order in accessing this resource is done by a semaphore. 
      
-     [std::counting_semaphore, std::binary_semaphore](https://en.cppreference.com/w/cpp/thread/counting_semaphore)
+    [std::counting_semaphore, std::binary_semaphore cppreference](https://en.cppreference.com/w/cpp/thread/counting_semaphore)
         
 ## std::barriers
- 1. Used mainly for thread coordination
- 2. considers number of threads to wait for the barrier to release. Barrier is released when c number of threads are blocked on the wait() condition.
- 3. Can be reused unlike std::latch
+ 1. Used mainly for thread coordination. A barrier is a door which waits for a certain number of threads to come to it. Threads do not wait on some condition to become true. They simply wait till the barrier receives enough number of threads requesting for this particular resource.
+ 2. Considers number of threads to wait for the barrier to release. Barrier is released when c number of threads are blocked on the `wait()` condition.
+ 3. Can be reused unlike `std::latch`
      
-     [](https://en.cppreference.com/w/cpp/thread/barrier)
+    [std::barriers cppreference](https://en.cppreference.com/w/cpp/thread/barrier)
         
 ## std::latch
- 1. Used mainly for thread coordination
- 2. similar to barrier but doesn’t require a thread to block itself to signal release of the barrier. Barrier is released when the a thread calls the count_down() function. Calling the count_down() function doesn’t block this thread.
+ 1. Used mainly for thread coordination. This is similar to `std::barrier` in sense that threads are made to wait on an external variable that is not used in their critical section. They wait until a latch is opened.
+ 2. A latch doesn’t require a thread to block itself to signal release of the barrier. Barrier is released when the a thread calls the `count_down()` function. Calling the `count_down()` function doesn’t block this thread.
  3. Calling thread can decrement latch multiple times.
      
-     [std::latch](https://en.cppreference.com/w/cpp/thread/latch)
+    [std::latch cppreference](https://en.cppreference.com/w/cpp/thread/latch)
         
-## Futures (Similar to Promise in js)
+## std::future (similar to Promise in js)
+This is similar to how Promise works in js. If a function is run asynchronosly, it's return value is stored as a std::future object. waiting on this future  object blocks the thread until the value is made available. Otherwise, the thread is free to continue working its own logic.
+
+[std::future cppreference](https://en.cppreference.com/w/cpp/thread/future)
+
+[^1]: One ways that I know how this could be done is by assigning priority to a thread. However, even this doesn't guarantee that a thread will not be interrupted. This is because kernel threads may have a higher priority than threads of user programs and this cannot be controlled without kernel privileges.

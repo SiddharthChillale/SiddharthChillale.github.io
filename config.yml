@@ -25,7 +25,7 @@ params:
   env: production 
   title: Siddharth C
   description: "Portfolio"
-  keywords: [Blog,Siddharth, Siddharth Chillale, Portfolio, PaperMod, Graphics, Programming, Lifestyle]
+  keywords: [Blog, Siddharth, Siddharth Chillale, Portfolio, PaperMod, Graphics, Programming, Lifestyle, C++]
   author: Siddharth Chillale
   # author: ["Me", "You"] # multiple authors
   

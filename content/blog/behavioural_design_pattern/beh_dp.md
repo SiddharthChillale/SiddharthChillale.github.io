@@ -1,7 +1,7 @@
 ---
 title: "Behavioural Design Patterns in C++"
-date: 2023-02-24T11:46:00-05:00
-draft: true
+date: 2023-01-24T11:46:00-05:00
+draft: false
 showToc: true
 ---
 
