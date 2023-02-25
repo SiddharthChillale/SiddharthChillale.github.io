@@ -13,11 +13,19 @@
       
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
       <description>Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above).
-std::mutex   allows a thread to modify a shared variable.
-std::mutex
-  must be released by the same thread that locks it.
-  other threads who try to acquire the lock are blocked
-  other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken.</description>
+Below are some explanantions on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, during my Masters my professor asked a question &amp;ldquo;If my computer just runs one thread at a time, is it necessary to ensure synchronisation ?</description>
+    </item>
+    
+    <item>
+      <title>Behavioural Design Patterns in C&#43;&#43;</title>
+      <link>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</link>
+      <pubDate>Tue, 24 Jan 2023 11:46:00 -0500</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
+      <description>Chain of Responsibility for series of nested handlers
+kinda like the middleware in express js
+1 2 3 4  class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; };   Command To reduce coupling between classes that call one another.
+Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in.</description>
     </item>
     
     <item>
@@ -116,18 +124,6 @@ Data Analyst Intern, Shaadi.com, Remote [04/2020 - 06/2020]
    Description - Studying Sharpe ratio for understanding Risk and Return for Amazon and Facebook stocks through the Fiscal Year 2016.
    Kaggle Link - siddalore/sharpe-ratio-study
   &amp;ldquo;Courier Management system&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title>Things I plan to do in the Future</title>
-      <link>https://siddharthchillale.github.io/blog/bucket-list/bucket_list/</link>
-      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://siddharthchillale.github.io/blog/bucket-list/bucket_list/</guid>
-      <description>Bucket List   C++ Game Programming (Binging):
-This is because I cannot learn something without having some knowledge of its application. I have to overcome the fear of C++ which I will do thanks to this.
-I&amp;rsquo;m learning it through this tutorial by Chilli Tomato Noodle. Currently, I&amp;rsquo;m just binging through it, consuming it like some Netflix Show, haha.
-  Making a Game using Godot Engine (MAJOR GOALS): Update [July 2020]: Realy proud that I completed this.</description>
     </item>
     
     <item>

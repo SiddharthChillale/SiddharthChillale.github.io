@@ -134,20 +134,33 @@ if (!doNotTrack) {
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://siddharthchillale.github.io/images/multithreading_primitives/multithreaded.png" alt="Tied up in threads">
+</figure>
   <header class="entry-header">
     <h2>Primitives in C&#43;&#43; for Multithreading
     </h2>
   </header>
   <section class="entry-content">
     <p>Following is a short and concise overview of the synchronisation primitives provided in the C&#43;&#43; STL (C&#43;&#43; 20 and above).
-std::mutex   allows a thread to modify a shared variable.
-std::mutex
-  must be released by the same thread that locks it.
-  other threads who try to acquire the lock are blocked
-  other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken....</p>
+Below are some explanantions on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn’t know how they interoperate with other “CS thingies”. For example, during my Masters my professor asked a question “If my computer just runs one thread at a time, is it necessary to ensure synchronisation ?...</p>
   </section>
-  <footer class="entry-footer"><span title='2023-02-23 19:29:20 -0500 EST'>February 23, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Siddharth Chillale</footer>
+  <footer class="entry-footer"><span title='2023-02-23 19:29:20 -0500 EST'>February 23, 2023</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Siddharth Chillale</footer>
   <a class="entry-link" aria-label="post link to Primitives in C&#43;&#43; for Multithreading" href="https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Behavioural Design Patterns in C&#43;&#43;
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Chain of Responsibility for series of nested handlers
+kinda like the middleware in express js
+1 2 3 4  class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; };   Command To reduce coupling between classes that call one another.
+Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in....</p>
+  </section>
+  <footer class="entry-footer"><span title='2023-01-24 11:46:00 -0500 EST'>January 24, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Siddharth Chillale</footer>
+  <a class="entry-link" aria-label="post link to Behavioural Design Patterns in C&#43;&#43;" href="https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -179,21 +192,6 @@ std::mutex
   </section>
   <footer class="entry-footer"><span title='2022-02-05 21:47:05 +0530 +0530'>February 5, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Siddharth Chillale</footer>
   <a class="entry-link" aria-label="post link to Handle git mistakes" href="https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Things I plan to do in the Future
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>Bucket List   C&#43;&#43; Game Programming (Binging):
-This is because I cannot learn something without having some knowledge of its application. I have to overcome the fear of C&#43;&#43; which I will do thanks to this.
-I’m learning it through this tutorial by Chilli Tomato Noodle. Currently, I’m just binging through it, consuming it like some Netflix Show, haha.
-  Making a Game using Godot Engine (MAJOR GOALS): Update [July 2020]: Realy proud that I completed this....</p>
-  </section>
-  <footer class="entry-footer"><span title='2020-11-22 00:00:00 +0000 UTC'>November 22, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Siddharth Chillale</footer>
-  <a class="entry-link" aria-label="post link to Things I plan to do in the Future" href="https://siddharthchillale.github.io/blog/bucket-list/bucket_list/"></a>
 </article>
 
 <article class="post-entry"> 

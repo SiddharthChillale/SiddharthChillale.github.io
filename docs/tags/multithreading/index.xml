@@ -13,11 +13,7 @@
       
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
       <description>Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above).
-std::mutex   allows a thread to modify a shared variable.
-std::mutex
-  must be released by the same thread that locks it.
-  other threads who try to acquire the lock are blocked
-  other threads can avoid being blocked by using try_lock. This tries to use a lock, but is not blocked if lock is already taken.</description>
+Below are some explanantions on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, during my Masters my professor asked a question &amp;ldquo;If my computer just runs one thread at a time, is it necessary to ensure synchronisation ?</description>
     </item>
     
   </channel>
