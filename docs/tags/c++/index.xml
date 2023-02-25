@@ -12,8 +12,8 @@
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
-      <description>Following is a short and concise overview of the synchronisation primitives provided in the C++ STL (C++ 20 and above).
-Below are some explanantions on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, during my Masters my professor asked a question &amp;ldquo;If my computer just runs one thread at a time, is it necessary to ensure synchronisation ?</description>
+      <description>Following is a short and concise overview of the synchronization primitives provided in the C++ STL (C++ 20 and above).
+Below are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even if I knew what these mean, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, during my Masters my professor asked a question &amp;ldquo;If my computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
     </item>
     
   </channel>
