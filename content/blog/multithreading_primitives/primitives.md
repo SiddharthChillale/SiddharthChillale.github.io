@@ -10,11 +10,12 @@ cover:
   relative: true
 ---
 
+## Motivation:
 
 There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn't know how they interoperate with other "CS thingies". For example, when one of my professor asked a question "If a computer just runs one thread at a time, is it necessary to ensure synchronization ?", it befuddled me. I wondered if the question made any sense and why were we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One method to solidify our thoughts is to write about it. Hence this article. 
-
+This article won't provide with implementation details on each primitive. It is to throw light on when and where each primitive is useful, and not examples on how to write them in code.
 Understanding the above question opens up many aspects of concurrent programming.  Here we will approach the synchronization primitives made available to use in the STL (C++ 20 and above).
-## std::mutex (from C++ 11)
+## std::mutex 
 available in header `<mutex>`
 [cppreference](https://en.cppreference.com/w/cpp/thread/mutex)
 
@@ -30,19 +31,23 @@ available in header `<mutex>`
     [std::atomic cppreference](https://en.cppreference.com/w/cpp/atomic/atomic)
         
 ## std::shared_mutex
+available in header `<mutex>`
+
  1. allows multiple threads shared access if are only going to read from the shared data. Nothing much to it, it works similar to how mutexes are supposed to work except with more flexibility than just blocking any thread. 
  2. Two types of locking mechanisms are provided : `lock()` and `lock_shared()` and their corresponding unlock() calls. 
     1. `lock()` allows locking the access to just readers (i.e if you are reading only from the shared data store).
-    1. `lock_shared()` allows locking the access to readers and writers (i.e if you are writing to the shared data store).
+    2. `lock_shared()` allows locking the access to readers and writers (i.e if you are writing to the shared data store).
  3. writers have exclusive access. When lock is acquired by writers, readers and other writers are blocked.
  4. **lock had to be released by the same thread that acquires it.**
  
  [std::shared_mutex cppreference](https://en.cppreference.com/w/cpp/thread/shared_mutex)
     
-## std::scoped_lock
- 1. provides a convenient way of owning a mutex through cpp’s RAII style. **lock is released when execution goes out of scope.**.
+## std::scoped_lock/ std::lock_guard / std::unique_lock
+available in header `<mutex>`
+
+ 1. All three provide a convenient way of owning a mutex through cpp’s RAII style. **lock is released when execution goes out of scope.**.
  2. This is not only to prevent developers' mistakes of forgetting to release the mutex but also to safeguard against exceptions.
- 3. can hold multiple nested mutexes.
+ 3. `std::unique_lock` enables a mutex to be moved to another structure like `std::condition_variable` (more on this later); `std::lock_guard` provides simple RAII convenience but can only use one mutex. If nesting multiple mutexes is what you need then `std::scoped_lock` can hold multiple nested mutexes.
      
     [std::scoped_lock cppreference](https://en.cppreference.com/w/cpp/thread/scoped_lock)
         
@@ -60,6 +65,8 @@ Following are some thingies made available by the C++ STL to make this power of 
 {{< figure align=center src="/images/multithreading_primitives/prim_comp.png" caption="Circumstances which benefit from a particular primitive." >}}
 
 ## std::condition_variable (aka cv)
+available in header `<condition_variable>`
+
  1. has a queue that holds the waiting threads blocked due to some condition on the shared variable.
  2. Threads are blocked until another thread both modifies the shared condition and notifies the condition_variable.
  3. Requires a mutex to work. specifically `std::unique_lock<std::mutex>`. One condition variable should work only with single mutex. Whereas, multiple condition variables can share a single mutex. The cv queue is handled by the condition variable object, and has nothing to do with the mutex associated with the cv.
@@ -70,6 +77,8 @@ Following are some thingies made available by the C++ STL to make this power of 
     [std::condition_variable cppreference](https://en.cppreference.com/w/cpp/thread/condition_variable)
         
 ## std::counting_semaphore, std::binary_semaphore
+(from C++ 20) available in header `<semaphore>`
+
  1. Think of a semaphore as a charging brick with multiple ports. The number of ports is analogous to the count in a counting semaphore. You can only attach a fixed number of devices to the ports. Other devices that wish to connect to these ports must wait for ports to open up.
  2. A counting semaphore has a mutex, a condition variable, and count c. In std::counting_semaphore one needs only to mention count c for constructing a c_semaphore.
  3. A binary semaphore is when the counting c is 1. Which allows only one thread to use the shared resource. This differs from a mutex in the sense of ownership. Mutex has to be released by the calling thread as it is owned by the calling thread. A binary_semapahore can be released by other threads even if they are not the owner of that lock.
@@ -79,6 +88,8 @@ Following are some thingies made available by the C++ STL to make this power of 
     [std::counting_semaphore, std::binary_semaphore cppreference](https://en.cppreference.com/w/cpp/thread/counting_semaphore)
         
 ## std::barriers
+(from C++ 20) available in header `<barrier>`
+
  1. Used mainly for thread coordination. A barrier is a door which waits for a certain number of threads to come to it. Threads do not wait on some condition to become true. They simply wait till the barrier receives enough number of threads requesting for this particular resource.
  2. Considers number of threads to wait for the barrier to release. Barrier is released when c number of threads are blocked on the `wait()` condition.
  3. Can be reused unlike `std::latch`
@@ -86,6 +97,8 @@ Following are some thingies made available by the C++ STL to make this power of 
     [std::barriers cppreference](https://en.cppreference.com/w/cpp/thread/barrier)
         
 ## std::latch
+(from C++ 20) available in header `<latch>`
+
  1. Used mainly for thread coordination. This is similar to `std::barrier` in sense that threads are made to wait on an external variable that is not used in their critical section. They wait until a latch is opened.
  2. A latch doesn’t require a thread to block itself to signal release of the barrier. Barrier is released when the a thread calls the `count_down()` function. Calling the `count_down()` function doesn’t block this thread.
  3. Calling thread can decrement latch multiple times.
