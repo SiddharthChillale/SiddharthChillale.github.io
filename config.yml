@@ -48,14 +48,14 @@ params:
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "profile/puzzle.png"
-    favicon16x16: "profile/puzzle.png"
-    favicon32x32: "profile/puzzle.png"
+    favicon: "profile/sc_logo.png"
+    favicon16x16: "profile/sc_logo.png"
+    favicon32x32: "profile/sc_logo.png"
     
 
   label:
     text: Siddharth
-    icon: profile/puzzle.png
+    icon: profile/sc_logo.png
     iconHeight: 35
 
   # profile-mode
