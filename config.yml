@@ -56,7 +56,7 @@ params:
   label:
     text: Siddharth
     icon: profile/sc_logo.png
-    iconHeight: 35
+    iconHeight: 36
 
   # profile-mode
   profileMode:
