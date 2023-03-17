@@ -12,7 +12,7 @@
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
-      <description>There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
+      <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
       <description>Chain of Responsibility for series of nested handlers
 kinda like the middleware in express js
-1 2 3 4  class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; };   Command To reduce coupling between classes that call one another.
+1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.
 Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in.</description>
     </item>
     
@@ -34,8 +34,8 @@ Introduce a third middle class that reduces this coupling. e.g. A button class d
       
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
       <description>Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
-  Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
-  Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
+Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
+Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
     </item>
     
     <item>
@@ -81,11 +81,11 @@ Introduce a third middle class that reduces this coupling. e.g. A button class d
       
       <guid>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</guid>
       <description>git status
-  git log
- --stat : log with the change stats.    git branch : shows all available branches.
- &amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;.    git ammend
- --amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message.    git checkout
- &amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
+git log
+--stat : log with the change stats. git branch : shows all available branches.
+&amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;. git ammend
+--amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message. git checkout
+&amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
     </item>
     
     <item>
@@ -105,9 +105,9 @@ Introduce a third middle class that reduces this coupling. e.g. A button class d
       <guid>https://siddharthchillale.github.io/resume/res/</guid>
       <description>Siddharth Chillale Software &amp;amp; Graphics Engineer
 (716) 903-2876 | schillal@buffalo.edu | www.linkedin.com/in/schillal | github.com/SiddharthChillale
- TECHNICAL EXPERIENCE
+TECHNICAL EXPERIENCE
 Data Analyst Intern, Shaadi.com, Remote [04/2020 - 06/2020]
- Built an end-to-end pipeline for extraction, parsing and transformation of 300+ reports and loading into a visual frontend for analysis on domestic and international flights for the past 4 years. Improved workflow efficiency by 20% through automating pipeline for transformation from PDFs to CSVs. Analyzed data of Airports Authority of India (AAI) to gauge the effect of the COVID-19 pandemic on the economy of air travel.</description>
+Built an end-to-end pipeline for extraction, parsing and transformation of 300+ reports and loading into a visual frontend for analysis on domestic and international flights for the past 4 years. Improved workflow efficiency by 20% through automating pipeline for transformation from PDFs to CSVs. Analyzed data of Airports Authority of India (AAI) to gauge the effect of the COVID-19 pandemic on the economy of air travel.</description>
     </item>
     
     <item>
@@ -117,12 +117,13 @@ Data Analyst Intern, Shaadi.com, Remote [04/2020 - 06/2020]
       
       <guid>https://siddharthchillale.github.io/projects/small_projects/small_projects/</guid>
       <description>&amp;ldquo;NIPS Papers Analysis&amp;rdquo;
-   Description- Discovering the hottest topics in machine learning by analysing NIPS papers using NLP libraries in python.
-   Github Link - SiddharthChillale/NIPS-papers-analyses
-  &amp;ldquo;Risk and Returns: The Sharpe Ratio&amp;rdquo;
-   Description - Studying Sharpe ratio for understanding Risk and Return for Amazon and Facebook stocks through the Fiscal Year 2016.
-   Kaggle Link - siddalore/sharpe-ratio-study
-  &amp;ldquo;Courier Management system&amp;rdquo;</description>
+Description- Discovering the hottest topics in machine learning by analysing NIPS papers using NLP libraries in python.
+Github Link - SiddharthChillale/NIPS-papers-analyses
+&amp;ldquo;Risk and Returns: The Sharpe Ratio&amp;rdquo;
+Description - Studying Sharpe ratio for understanding Risk and Return for Amazon and Facebook stocks through the Fiscal Year 2016.
+Kaggle Link - siddalore/sharpe-ratio-study
+&amp;ldquo;Courier Management system&amp;rdquo;
+Description - Built a courier managements system web application in Flask and database hosted with SQLite, Handled the Model and View of the app with database implementation.</description>
     </item>
     
     <item>
@@ -131,9 +132,9 @@ Data Analyst Intern, Shaadi.com, Remote [04/2020 - 06/2020]
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</guid>
-      <description>What to do to gain Experience   Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself.  How to know what the jobs require
- Job Descriptions Informational interview Linkedin Research  BE REALISTIC Once you know what the requirements are
- Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know.</description>
+      <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
+Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
+Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
     </item>
     
     <item>

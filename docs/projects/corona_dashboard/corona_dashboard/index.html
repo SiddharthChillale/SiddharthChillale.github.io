@@ -12,15 +12,15 @@
 <link rel="canonical" href="https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/" />
 <meta name="google-site-verification" content="XYZabc" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.1e44d58192cbf6d7a4eb649bc43dbc3d4cc432677e5d8adc69b08c34cbe461ac.css" integrity="sha256-HkTVgZLL9tek62SbxD28PUzEMmd&#43;XYrcabCMNMvkYaw=" rel="preload stylesheet" as="style">
-<link rel="preload" href="profile/puzzle.png" as="image">
-<link rel="icon" href="https://siddharthchillale.github.io/profile/puzzle.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://siddharthchillale.github.io/profile/puzzle.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://siddharthchillale.github.io/profile/puzzle.png">
+<link rel="preload" href="profile/sc_logo.png" as="image">
+<link rel="icon" href="https://siddharthchillale.github.io/profile/sc_logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://siddharthchillale.github.io/profile/sc_logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://siddharthchillale.github.io/profile/sc_logo.png">
 <link rel="apple-touch-icon" href="https://siddharthchillale.github.io/apple-touch-icon.png">
 <link rel="mask-icon" href="https://siddharthchillale.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.111.2">
 <noscript>
     <style>
         #theme-toggle,
@@ -84,7 +84,7 @@ if (!doNotTrack) {
   "keywords": [
     "flask", "data science", "automation"
   ],
-  "articleBody": "It was around January 2019 when I heard of the rising cases of a deadly disease spreading in china. I was deep into studying data science and machine learning that time and lived and breathed on the Kaggle website. It was during this time that I found the dataset on the number of cases of COVID; people were already making kaggle notebooks on this data. I thought I had to jump on this train. Thus, I started a kaggle notebook with this dataset colected and made available by John Hopkins University. I quickly prototyped a working chart and started making all types of diagrams I could make from this data. “This is going to be a big deal” I thought. I was surprised, confused and delusionally delighted that such an infectious virus hadn’t made its way in India yet, especially considering that the country where it started was our neighbour. In fact, the US had reported early cases of COVID than India(though now I realise that it must have been started in India too but was not reported due to lack of intensive tesing done at that time). India had already set up travel restrictions to and fro China, so that might have delayed the spread.\nAnyway, I have digressed enough. I started making plans of converting this analytical notebook into a web app that could be statically hosted somewhere where it would automate the process of fetching data from JHU, processing the data and presenting it in a easy to understand dashboard. This is the start of that project which is now hosted on Heroku on this link.\nThe dashboard shows 5 diagrams.\n Pie chart of the top 5 countries with highest total number of cases. Table showing the case data for the above top 5 countries. A graph of total confirmed covid cases against time. A graph of total death covid cases against time. A graph of new cases per total number of cases  I used python for fetching and processing the data. Visualizing of data was done by the plotly library. The webapp is hosted on a heroku server.\nFinal\n A rolling mean of the number of new cases against the total number of cases.\n   The numbers had very extreme values due to inconsistency of data. Since we are focusing only on the trend, we do not require exact numbers. Therefore, a rolling mean of 5 values is implemented to smoothen out the irregularities.  Initial\n A graph that plots new cases per total number of cases\n   Added a graph plotting new cases to existing cases. The Graph is number of New cases per Total number of cases. In order to understand exponential growths for diseases, we must not plot the growth against time (which is not so useful in prediction) ; but with the total existing numbers.1 A fall in the graph indicates lowering of new cases with total cases. i.e. We see that China and Korea are out of the danger of new cases. Italy and Spain are seeing small rates of controling the virus. Axes are plotted on logarithmic scale.   Version 1.5 Date: March 23-27, 2020  Look of the website uplifted using plotly.\n  Updates\n Added a Death Count Graph. Changed the theme of the dashboard to look more presentable. Added functionality of updating data in every refresh or at intervals of 6 hours.   Version 1.0 Date: March 12-18, 2020  Pie chart of the top 5 countries with highest daily confirmed cases.\n   Graph showing the daily count of total confirmed cases.\n   Implemented a Confirmed Cases count graph. Implemented a New cases per day graph. Implemented a Pie chart for comparing proportions. Implemented a Table to give info on daily new cases. Deployed in production mode to Heroku.    How To Tell If We’re Beating COVID-19 - minutephysics ↩︎\n   ",
+  "articleBody": "It was around January 2019 when I heard of the rising cases of a deadly disease spreading in china. I was deep into studying data science and machine learning that time and lived and breathed on the Kaggle website. It was during this time that I found the dataset on the number of cases of COVID; people were already making kaggle notebooks on this data. I thought I had to jump on this train. Thus, I started a kaggle notebook with this dataset colected and made available by John Hopkins University. I quickly prototyped a working chart and started making all types of diagrams I could make from this data. “This is going to be a big deal” I thought. I was surprised, confused and delusionally delighted that such an infectious virus hadn’t made its way in India yet, especially considering that the country where it started was our neighbour. In fact, the US had reported early cases of COVID than India(though now I realise that it must have been started in India too but was not reported due to lack of intensive tesing done at that time). India had already set up travel restrictions to and fro China, so that might have delayed the spread.\nAnyway, I have digressed enough. I started making plans of converting this analytical notebook into a web app that could be statically hosted somewhere where it would automate the process of fetching data from JHU, processing the data and presenting it in a easy to understand dashboard. This is the start of that project which is now hosted on Heroku on this link.\nThe dashboard shows 5 diagrams.\nPie chart of the top 5 countries with highest total number of cases. Table showing the case data for the above top 5 countries. A graph of total confirmed covid cases against time. A graph of total death covid cases against time. A graph of new cases per total number of cases I used python for fetching and processing the data. Visualizing of data was done by the plotly library. The webapp is hosted on a heroku server.\nFinal\nA rolling mean of the number of new cases against the total number of cases.\nThe numbers had very extreme values due to inconsistency of data. Since we are focusing only on the trend, we do not require exact numbers. Therefore, a rolling mean of 5 values is implemented to smoothen out the irregularities. Initial\nA graph that plots new cases per total number of cases\nAdded a graph plotting new cases to existing cases. The Graph is number of New cases per Total number of cases. In order to understand exponential growths for diseases, we must not plot the growth against time (which is not so useful in prediction) ; but with the total existing numbers.1 A fall in the graph indicates lowering of new cases with total cases. i.e. We see that China and Korea are out of the danger of new cases. Italy and Spain are seeing small rates of controling the virus. Axes are plotted on logarithmic scale. Version 1.5 Date: March 23-27, 2020 Look of the website uplifted using plotly.\nUpdates\nAdded a Death Count Graph. Changed the theme of the dashboard to look more presentable. Added functionality of updating data in every refresh or at intervals of 6 hours. Version 1.0 Date: March 12-18, 2020 Pie chart of the top 5 countries with highest daily confirmed cases.\nGraph showing the daily count of total confirmed cases.\nImplemented a Confirmed Cases count graph. Implemented a New cases per day graph. Implemented a Pie chart for comparing proportions. Implemented a Table to give info on daily new cases. Deployed in production mode to Heroku. How To Tell If We’re Beating COVID-19 - minutephysics ↩︎\n",
   "wordCount" : "630",
   "inLanguage": "en",
   "image":"https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/images/corona_dashboard/coronavirus.jpg","datePublished": "2020-04-10T00:00:00Z",
@@ -102,7 +102,7 @@ if (!doNotTrack) {
     "name": "Siddharth C",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://siddharthchillale.github.io/profile/puzzle.png"
+      "url": "https://siddharthchillale.github.io/profile/sc_logo.png"
     }
   }
 }
@@ -121,7 +121,7 @@ if (!doNotTrack) {
     <nav class="nav">
         <div class="logo">
             <a href="https://siddharthchillale.github.io/" accesskey="h" title="Siddharth (Alt + H)">
-                <img src="https://siddharthchillale.github.io/profile/puzzle.png" alt="logo" aria-label="logo"
+                <img src="https://siddharthchillale.github.io/profile/sc_logo.png" alt="logo" aria-label="logo"
                     height="35">Siddharth</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
@@ -276,14 +276,14 @@ I quickly prototyped a working chart and started making all types of diagrams I 
 <li>Implemented a Table to give info on daily new cases.</li>
 <li>Deployed in production mode to Heroku.</li>
 </ul>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://youtu.be/54XLXg4fYsc?t=169">How To Tell If We&rsquo;re Beating COVID-19 - minutephysics</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
 
   </div>

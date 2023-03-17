@@ -12,7 +12,7 @@
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
-      <description>There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
+      <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
       <description>Chain of Responsibility for series of nested handlers
 kinda like the middleware in express js
-1 2 3 4  class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; };   Command To reduce coupling between classes that call one another.
+1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.
 Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in.</description>
     </item>
     
@@ -43,11 +43,11 @@ Introduce a third middle class that reduces this coupling. e.g. A button class d
       
       <guid>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</guid>
       <description>git status
-  git log
- --stat : log with the change stats.    git branch : shows all available branches.
- &amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;.    git ammend
- --amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message.    git checkout
- &amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
+git log
+--stat : log with the change stats. git branch : shows all available branches.
+&amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;. git ammend
+--amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message. git checkout
+&amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
     </item>
     
     <item>
@@ -56,9 +56,9 @@ Introduce a third middle class that reduces this coupling. e.g. A button class d
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</guid>
-      <description>What to do to gain Experience   Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself.  How to know what the jobs require
- Job Descriptions Informational interview Linkedin Research  BE REALISTIC Once you know what the requirements are
- Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know.</description>
+      <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
+Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
+Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
     </item>
     
   </channel>

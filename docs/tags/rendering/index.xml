@@ -13,8 +13,8 @@
       
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
       <description>Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
-  Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
-  Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
+Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
+Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
     </item>
     
     <item>
