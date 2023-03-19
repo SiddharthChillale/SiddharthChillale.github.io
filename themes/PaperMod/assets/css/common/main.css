@@ -7,8 +7,13 @@
     font-family: 'Roboto Slab', serif;
     text-align: justify;
 }
-.polka_dot{
+body:not(.dark) .polka_dot{
     background-image: radial-gradient(#dfdfdf 1.05px,#f5f5f5 1.05px);
+    background-size: 21px 21px;
+}
+
+body.dark .polka_dot{
+    background-image: radial-gradient(#3a3a3a 1.05px,#1d1e20 1.05px);
     background-size: 21px 21px;
 }
 .page-header h1 {
