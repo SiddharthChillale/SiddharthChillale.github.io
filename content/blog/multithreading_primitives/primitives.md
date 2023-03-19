@@ -21,9 +21,9 @@ available in header `<mutex>`
 
 *Used generally for Exclusion rather than Ordering.*
 
-1. allows a thread to modify a shared variable.  
+1. Allows a thread to modify a shared variable.  
 2. **Must be released by the same thread that locks it**. If not released, then there's no way to allow other threads depending on it to run. Ultimately, the process (mostly the application) has to exit to regain control.
-3. other threads who try to acquire the lock are blocked. What does it mean when a thread is said to be blocked ? The OS uses certain scheduling techniques(FCFS, round robin, MLFQS, etc) to schedule the time certain threads are run. When a thread X is said to be blocked, the thread doesn't start executing even when the OS schedules it run. This is the reason, that even when a single thread is run at a time, it is necessary to ensure synchronization. There's a possibility that when a thread is executing in its critical section, it is put to the back of the scheduling queue by the OS; and at the same time another thread can run its own critical section. There is no guarantee to make a thread run entirely on its own without being interrupted by the OS, but there are ways to increase the probability of this particular thread being run the most number of times [^1]. In any case, it is evident that even in a computer where a single thread is executed at a time, it is necessary to ensure synchronization. Remember, that issue of synchronization pops up when you are trying to make a program run by multiple threads and if these threads share some data between them.
+3. Other threads who try to acquire the lock are blocked. What does it mean when a thread is said to be blocked ? The OS uses certain scheduling techniques(FCFS, round robin, MLFQS, etc) to schedule the time certain threads are run. When a thread X is said to be blocked, the thread doesn't start executing even when the OS schedules it run. This is the reason, that even when a single thread is run at a time, it is necessary to ensure synchronization. There's a possibility that when a thread is executing in its critical section, it is put to the back of the scheduling queue by the OS; and at the same time another thread can run its own critical section. There is no guarantee to make a thread run entirely on its own without being interrupted by the OS, but there are ways to increase the probability of this particular thread being run the most number of times [^1]. In any case, it is evident that even in a computer where a single thread is executed at a time, it is necessary to ensure synchronization. Remember, that issue of synchronization pops up when you are trying to make a program run by multiple threads and if these threads share some data between them.
 4. Other threads can avoid being blocked by using `try_lock`. This tries to own a mutex, but is not blocked if mutex is already taken. This allows the attempting thread to do something else while waiting for the lock to release. This means that when a thread is allowed to work by the OS scheduler, it'll continue with some other work until the mutex is made available. This is useful, because when though a thread is blocked, the OS has alloted some time units for this thread to work in. This leads to the thread just waiting for the mutex to be free when it could do some other work. This effect is called "busy waiting".
 5. Normally, mutexes are never used in their raw format, they are used along with a lock. C++ STL gives you multiple ways to use a mutex, through `std::lock_guard`, `std::unique_lock` and `std::scoped_lock`. 
 6. If the shared variables are simple primitive data items then C++ gives you the std::atomic. std::atomic can be used for cpp data types or even shared/weak pointers. 
@@ -33,11 +33,11 @@ available in header `<mutex>`
 ## std::shared_mutex
 available in header `<mutex>`
 
- 1. allows multiple threads shared access if are only going to read from the shared data. Nothing much to it, it works similar to how mutexes are supposed to work except with more flexibility than just blocking any thread. 
+ 1. Allows multiple threads shared access if are only going to read from the shared data. Nothing much to it, it works similar to how mutexes are supposed to work except with more flexibility than just blocking any thread. 
  2. Two types of locking mechanisms are provided : `lock()` and `lock_shared()` and their corresponding unlock() calls. 
     1. `lock()` allows locking the access to just readers (i.e if you are reading only from the shared data store).
     2. `lock_shared()` allows locking the access to readers and writers (i.e if you are writing to the shared data store).
- 3. writers have exclusive access. When lock is acquired by writers, readers and other writers are blocked.
+ 3. Writers have exclusive access. When lock is acquired by writers, readers and other writers are blocked.
  4. **lock had to be released by the same thread that acquires it.**
  
  [std::shared_mutex cppreference](https://en.cppreference.com/w/cpp/thread/shared_mutex)
