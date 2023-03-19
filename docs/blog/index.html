@@ -11,7 +11,7 @@
 <meta name="author" content="Siddharth Chillale">
 <link rel="canonical" href="https://siddharthchillale.github.io/blog/" />
 <meta name="google-site-verification" content="XYZabc" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.76747c1ad4f7fada174f38a3675b30e25e84eaf1efdc91e4a4d1e878cf532ac4.css" integrity="sha256-dnR8GtT3&#43;toXTzijZ1sw4l6E6vHv3JHkpNHoeM9TKsQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.36ee48f3a92540e6966d7de2acc3a8eda8f7c2e9b6e2558a9d8edfd9f32aa8ab.css" integrity="sha256-Nu5I86klQOaWbX3irMOo7aj3wum24lWKnY7f2fMqqKs=" rel="preload stylesheet" as="style">
 <link rel="preload" href="profile/sc_logo.png" as="image">
 <link rel="icon" href="https://siddharthchillale.github.io/profile/sc_logo.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://siddharthchillale.github.io/profile/sc_logo.png">
@@ -129,7 +129,8 @@ if (!doNotTrack) {
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<div class="polka_dot">
+        <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://siddharthchillale.github.io/">Home</a></div>
   <h1>Blogs</h1>
 </header>
@@ -154,10 +155,10 @@ if (!doNotTrack) {
     </h2>
   </header>
   <section class="entry-content">
-    <p>Chain of Responsibility for series of nested handlers
+    <p>Design patterns in C&#43;&#43; are ways to structure code so as to maximise code reusability and versatility. Below are some of my understanding of the different behavioural design patterns in C&#43;&#43; condensed from a course I had taken on LinkedIn Learning.
+Chain of Responsibility for series of nested handlers
 kinda like the middleware in express js
-1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.
-Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in....</p>
+1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another....</p>
   </section>
   <footer class="entry-footer"><span title='2023-01-24 11:46:00 -0500 EST'>January 24, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Siddharth Chillale</footer>
   <a class="entry-link" aria-label="post link to Behavioural Design Patterns in C&#43;&#43;" href="https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/"></a>
@@ -207,7 +208,9 @@ Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of yo
   <footer class="entry-footer"><span title='2020-11-04 00:00:00 +0000 UTC'>November 4, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Siddharth Chillale</footer>
   <a class="entry-link" aria-label="post link to How to Gain Experience" href="https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/"></a>
 </article>
-    </main>
+        </main>
+    </div>
+    
     
 <footer class="footer">
     <span>&copy; 2023 <a href="https://siddharthchillale.github.io/">Siddharth C</a></span>

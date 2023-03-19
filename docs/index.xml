@@ -21,10 +21,10 @@
       <pubDate>Tue, 24 Jan 2023 11:46:00 -0500</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
-      <description>Chain of Responsibility for series of nested handlers
+      <description>Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of my understanding of the different behavioural design patterns in C++ condensed from a course I had taken on LinkedIn Learning.
+Chain of Responsibility for series of nested handlers
 kinda like the middleware in express js
-1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.
-Introduce a third middle class that reduces this coupling. e.g. A button class does not need to have a handle to the canvas. It can have a handle to the command class which in turn has a handle to the canvas it wants to run the command in.</description>
+1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.</description>
     </item>
     
     <item>
