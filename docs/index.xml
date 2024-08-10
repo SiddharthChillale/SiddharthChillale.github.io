@@ -21,7 +21,7 @@
       <pubDate>Tue, 24 Jan 2023 11:46:00 -0500</pubDate>
       
       <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
-      <description>Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of my understanding of the different behavioural design patterns in C++ condensed from a course I had taken on LinkedIn Learning.
+      <description>Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of the keypoints of the different behavioural design patterns in C++ condensed into quick bites from a course on LinkedIn Learning.
 Chain of Responsibility for series of nested handlers
 kinda like the middleware in express js
 1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.</description>
@@ -95,19 +95,6 @@ git log
       
       <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
       <description>A pathtracing course project.</description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>https://siddharthchillale.github.io/resume/res/</link>
-      <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
-      
-      <guid>https://siddharthchillale.github.io/resume/res/</guid>
-      <description>Siddharth Chillale Software &amp;amp; Graphics Engineer
-(716) 903-2876 | schillal@buffalo.edu | www.linkedin.com/in/schillal | github.com/SiddharthChillale
-TECHNICAL EXPERIENCE
-Data Analyst Intern, Shaadi.com, Remote [04/2020 - 06/2020]
-Built an end-to-end pipeline for extraction, parsing and transformation of 300+ reports and loading into a visual frontend for analysis on domestic and international flights for the past 4 years. Improved workflow efficiency by 20% through automating pipeline for transformation from PDFs to CSVs. Analyzed data of Airports Authority of India (AAI) to gauge the effect of the COVID-19 pandemic on the economy of air travel.</description>
     </item>
     
     <item>
