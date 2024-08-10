@@ -4,8 +4,7 @@ date: 2023-01-24T11:46:00-05:00
 draft: false
 showToc: true
 ---
-Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility.
-Below are some of my understanding of the different behavioural design patterns in C++ condensed from a course I had taken on LinkedIn Learning.
+Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of the keypoints of the different behavioural design patterns in C++ condensed into quick bites from a course on LinkedIn Learning.
 ### Chain of Responsibility
 
 for series of nested handlers
