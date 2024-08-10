@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blogs on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/blog/</link>
+    <description>Recent content in Blogs on Siddharth C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Feb 2023 19:29:20 -0500</lastBuildDate><atom:link href="https://siddharthchillale.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primitives in C&#43;&#43; for Multithreading</title>
+      <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
+      <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
+      <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
+    </item>
+    
+    <item>
+      <title>Behavioural Design Patterns in C&#43;&#43;</title>
+      <link>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</link>
+      <pubDate>Tue, 24 Jan 2023 11:46:00 -0500</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
+      <description>Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of the keypoints of the different behavioural design patterns in C++ condensed into quick bites from a course on LinkedIn Learning. LALALA
+Chain of Responsibility for series of nested handlers
+kinda like the middleware in express js
+1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.</description>
+    </item>
+    
+    <item>
+      <title>Rendering Pipeline of Unreal Engine</title>
+      <link>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</link>
+      <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</guid>
+      <description>A summary of the Rendering pipeline in Unreal Engine.</description>
+    </item>
+    
+    <item>
+      <title>Handle git mistakes</title>
+      <link>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</link>
+      <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</guid>
+      <description>git status
+git log
+--stat : log with the change stats. git branch : shows all available branches.
+&amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;. git ammend
+--amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message. git checkout
+&amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
+    </item>
+    
+    <item>
+      <title>How to Gain Experience</title>
+      <link>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</guid>
+      <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
+Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
+Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
+    </item>
+    
+  </channel>
+</rss>

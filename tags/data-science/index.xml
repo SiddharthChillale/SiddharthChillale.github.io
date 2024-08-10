@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Science on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/tags/data-science/</link>
+    <description>Recent content in Data Science on Siddharth C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Corona Dashboard devlog</title>
+      <link>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</guid>
+      <description>Ay ! I developed a COVID-19 dashboard.</description>
+    </item>
+    
+  </channel>
+</rss>

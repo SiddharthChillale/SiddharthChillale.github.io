@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Graphics on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/categories/graphics/</link>
+    <description>Recent content in Graphics on Siddharth C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cudafying ray tracing in one weekend</title>
+      <link>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
+      <description>My understanding from porting Raytracing to Cuda</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing in One Weekend</title>
+      <link>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</guid>
+      <description>My understanding from Ray Tracing in One Weekend.</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing: The Next Week</title>
+      <link>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</link>
+      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</guid>
+      <description>My understanding from Ray Tracing: The Next Week.</description>
+    </item>
+    
+    <item>
+      <title>Rendering Pipeline of Unreal Engine</title>
+      <link>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</link>
+      <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</guid>
+      <description>A summary of the Rendering pipeline in Unreal Engine.</description>
+    </item>
+    
+    <item>
+      <title>PathTracer: Global Illumination</title>
+      <link>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
+      <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
+      <description>A pathtracing course project.</description>
+    </item>
+    
+    <item>
+      <title>Corona Dashboard devlog</title>
+      <link>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</guid>
+      <description>Ay ! I developed a COVID-19 dashboard.</description>
+    </item>
+    
+  </channel>
+</rss>
