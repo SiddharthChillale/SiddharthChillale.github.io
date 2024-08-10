@@ -4,28 +4,25 @@
     <title>Rendering on Siddharth C</title>
     <link>https://siddharthchillale.github.io/tags/rendering/</link>
     <description>Recent content in Rendering on Siddharth C</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 11:44:11 -0500</lastBuildDate>
+    <atom:link href="https://siddharthchillale.github.io/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Journey into learning Direct3D 11</title>
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
       <description>Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
 Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
 Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
     </item>
-    
     <item>
       <title>Rendering Pipeline of Unreal Engine</title>
       <link>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</link>
       <pubDate>Wed, 23 Feb 2022 21:47:05 +0530</pubDate>
-      
       <guid>https://siddharthchillale.github.io/blog/unreal_rendering/unreal_rendering/</guid>
       <description>A summary of the Rendering pipeline in Unreal Engine.</description>
     </item>
-    
   </channel>
 </rss>

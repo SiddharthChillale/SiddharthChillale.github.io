@@ -4,55 +4,46 @@
     <title>Graphics on Siddharth C</title>
     <link>https://siddharthchillale.github.io/tags/graphics/</link>
     <description>Recent content in Graphics on Siddharth C</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.131.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jul 2022 19:14:01 -0400</lastBuildDate><atom:link href="https://siddharthchillale.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 12:08:21 -0500</lastBuildDate>
+    <atom:link href="https://siddharthchillale.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Journey into learning Direct3D 11</title>
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
       <description>Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
 Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
 Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
     </item>
-    
     <item>
       <title>Cudafying ray tracing in one weekend</title>
       <link>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
       <description>My understanding from porting Raytracing to Cuda</description>
     </item>
-    
     <item>
       <title>Ray Tracing in One Weekend</title>
       <link>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</guid>
       <description>My understanding from Ray Tracing in One Weekend.</description>
     </item>
-    
     <item>
       <title>Ray Tracing: The Next Week</title>
       <link>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</guid>
       <description>My understanding from Ray Tracing: The Next Week.</description>
     </item>
-    
     <item>
       <title>PathTracer: Global Illumination</title>
       <link>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
-      
       <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
       <description>A pathtracing course project.</description>
     </item>
-    
   </channel>
 </rss>
