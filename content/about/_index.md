@@ -11,18 +11,15 @@ draft: false
 
 
 
-- :water_buffalo: I just completed my Masters in Computer Science at University at Buffalo with specialization in Low-Level Computer Systems.
+- :water_buffalo: I completed my Masters in Computer Science at University at Buffalo with specialization in Low-Level Computer Systems.
 - :camera: My topics of interest(but not limited to) are 
   * Low-level software systems and optimization.
-  * Computer Graphics
-  * Neural Networks and Machine Learning
-  * Web and networking 
+  * Data Engineering and Networking
+  * Cloud Engineering
+  * Web development 
   
 
-- 💬 Ask me about **Graphics, Multithreading and C++**
-
-I love reading books, blogs, or watching conference videos (especially CppCon and GDC). I also draw, paint and admire art of any kind. My love for graphics programming comes from my love for programming and art. I play Table Tennis, Badminton and I like to think I'm good at it :p ! I listen to different types of music, be it genre or artist. But mostly, I listen to video game OSTs and instrumentals. 
-My innate driving force is exploration and curiosity, and I try to use that as a compass to live my life. I constantly try to seek out experiences that I've never had before. 
+I love reading books, programming, and books on programming. I also draw, paint and admire art of any kind. I play Table Tennis, Badminton and I like to think I'm good at it :p! My innate driving force is exploration and curiosity to understand the world and my place in it. I constantly try to seek out experiences that I've never had before. 
 Ping me on any of my social to chat with me 🙂 !!
 
 **Contact me on**
@@ -46,14 +43,14 @@ Ping me on any of my social to chat with me 🙂 !!
 <!--START_SECTION:waka-->
 - &check; - 2D C++ game development [link](https://github.com/SiddharthChillale/snek_game)
   - Wrote a C++ game from scratch featuring a snake who can eat food to grow longer and snacks to move faster. Used WinAPI for window creation and coloring graphics. Implemented primitives like lines, triangles and quads. 
-- &check; - Software Ray Tracer [link](https://github.com/SiddharthChillale/Ray_Tracer)
-  - wrote a ray tracer following the raytracing series of three books by Peter Shirley. Includes acceleration using bounding volume hierarchical structures of AABBs, volume rendering, direct and indirect light illumination using BRDF model, Texture and image mapping. A Z-Buffer is used to determine the order of drawing overlapping triangles. 
+- &check; - Software Offline Ray Tracer [link](https://github.com/SiddharthChillale/Ray_Tracer)
+  - Wrote a ray tracer following the raytracing series of three books by Peter Shirley. Includes acceleration using bounding volume hierarchical structures of AABBs, volume rendering, direct and indirect light illumination using BRDF model, Texture and image mapping. A Z-Buffer is used to determine the order of drawing overlapping triangles. 
 - &check; - DirectX Deferred Rendering [link](https://github.com/SiddharthChillale/cofe-3d-renderer)
   - Developed a 3D renderer using DirectX for deferred rendering. Features include dynamic Phong shading with specular highlights, mesh loading, texture mapping with mipmaps, frustum culling. 
-- - [ ] - Realtime DirectX Raytracing (future)
-- - [ ] - Exploration of CPU-Multithreading and uses in applictions. Currently practisiing with Leetcode Concurrency problems.
-- - [ ] - SFML application for demonstrating different sampling techniques like Poisson-Disk sampling, Importance Sampling, Uniform Sampling, Random Sampling.
-- - [ ] - Neural Rendering (future)
+- [ ] - Realtime DirectX Raytracing (future)
+- [ ] - Exploration of CPU-Multithreading and uses in applictions. Currently practisiing with Leetcode Concurrency problems.
+- [ ] - SFML application for demonstrating different sampling techniques like Poisson-Disk sampling, Importance Sampling, Uniform Sampling, Random Sampling.
+- [ ] - Neural Rendering (future)
 
 <!--END_SECTION:waka-->
 
@@ -80,24 +77,27 @@ Ping me on any of my social to chat with me 🙂 !!
     
   - Teaching Assistant at ShiP.py 
     
-  - Hosted HacktoberFest Event at Institute.
+  - Hosted HacktoberFest Event at Indian Institute of Information Technology.
     
-  -  Frontend Developer at Xungry
+  - Frontend Developer at Xungry
     
 - **2017**
     
-  -  Intermediate, Rajiv Gandhi School of e-learning, Pune, Maharashtra, India 88%.
+  -  Intermediate, Rajiv Gandhi School of e-learning, Pune, Maharashtra, India.
     
 - **2015**
     
-   - Matriculation, Mona School,Maharashtra, India, 92%.
+   - Matriculation, Mona School,Maharashtra, India.
     
 ---
 
 
 #### CERTIFICATIONS
 
-It's a popular notion that certifications are useless. Sure, certificates are no gurantee that you know a particular topic very well and it may not hold credibility for your technical competence, however, I'd say having a certificate gives me confidence in my skills and helps combat the ever-present imposter syndrome, so I'm listing the certifications down here.
+- AWS Certified Cloud Practitioner (CLF) - Q4B80MS2V1VE14S9 
+  - July 2023-July 2026
+
+##### Minor Certifications
 
 - Mastering C++ - LinkedIn
   - Standard Template Library

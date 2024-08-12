@@ -63,7 +63,7 @@ params:
     enabled: true # needs to be explicitly set
     title_f: Siddharth
     title_l:  Chillale
-    subtitle: "Software Developer | C++, Multithreading, Graphics"
+    subtitle: "Software Developer | Data Engineering, Cloud Computing, Web Develpment"
     imageUrl: "/profile/SiddharthChillale_square.jpg"
     # imageWidth: 120
     # imageHeight: 120
