@@ -23,7 +23,7 @@ jobs:
       - name: Build
         env:
           HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
-          HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS}}
+          HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS}}
         run: hugo --minify
 
       - name: Deploy
