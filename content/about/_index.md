@@ -11,16 +11,16 @@ draft: false
 
 
 
-- :water_buffalo: I completed my Masters in Computer Science at University at Buffalo with specialization in Low-Level Computer Systems.
+- :water_buffalo: I completed my Masters in Computer Science at University at Buffalo.
 - :camera: My topics of interest(but not limited to) are 
-  * Low-level software systems and optimization.
-  * Data Engineering and Networking
+  * Server side development
   * Cloud Engineering
-  * Web development 
+  * Low-level software systems
+  * Computer Graphics and 3D rendering 
   
 
-I love reading books, programming, and books on programming. I also draw, paint and admire art of any kind. I play Table Tennis, Badminton and I like to think I'm good at it :p! My innate driving force is exploration and curiosity to understand the world and my place in it. I constantly try to seek out experiences that I've never had before. 
-Ping me on any of my social to chat with me 🙂 !!
+I love reading books, programming, and books on programming. I also draw, paint and admire art of any kind. I play Table Tennis, Badminton and I like to think I'm good at it :p! Curious, tenacious and persistent are some adjectives that define me. I constantly try to expand my world view by seeking out new and fresh experiences. 
+Ping me on any of my social to chat with me 🙂!!
 
 **Contact me on**
 
@@ -38,7 +38,7 @@ Ping me on any of my social to chat with me 🙂 !!
 <!-- BLOG-POST-LIST:END -->
 
 -------
-
+<!-- 
 📊 **Current Projects Lists**
 <!--START_SECTION:waka-->
 - &check; - 2D C++ game development [link](https://github.com/SiddharthChillale/snek_game)
@@ -50,7 +50,7 @@ Ping me on any of my social to chat with me 🙂 !!
 - [ ] - Realtime DirectX Raytracing (future)
 - [ ] - Exploration of CPU-Multithreading and uses in applictions. Currently practisiing with Leetcode Concurrency problems.
 - [ ] - SFML application for demonstrating different sampling techniques like Poisson-Disk sampling, Importance Sampling, Uniform Sampling, Random Sampling.
-- [ ] - Neural Rendering (future)
+- [ ] - Neural Rendering (future) -->
 
 <!--END_SECTION:waka-->
 
