@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main  
 
 jobs:
   deploy:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  
+          fetch-depth: 0    
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -20,19 +20,10 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Print repo sec
-        run: echo "HUGO_GS = $HUGO_GOOGLEANALYTICS"  
-        env: 
-          HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
-          HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS }}
-      
-
       - name: Build
         run: hugo --minify 
         env: 
           HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
-          
-        # run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
