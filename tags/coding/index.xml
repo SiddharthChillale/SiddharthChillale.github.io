@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Coding on Siddharth C</title>
-    <link>https://envsiddharthchillale.github.io/tags/coding/</link>
+    <link>https://siddharthchillale.github.io/tags/coding/</link>
     <description>Recent content in Coding on Siddharth C</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 Feb 2023 11:09:01 -0500</lastBuildDate>
-    <atom:link href="https://envsiddharthchillale.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://siddharthchillale.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cudafying ray tracing in one weekend</title>
-      <link>https://envsiddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
+      <link>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      <guid>https://envsiddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
+      <guid>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
       <description>My understanding from porting Raytracing to Cuda</description>
     </item>
   </channel>
