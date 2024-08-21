@@ -59,7 +59,7 @@ params:
     enabled: true 
     title_f: Siddharth
     title_l:  Chillale
-    subtitle: "Software Developer | Data Engineering, Cloud Computing, Web Develpment"
+    subtitle: "Software Developer | Backend, Cloud, Database"
     imageUrl: "/profile/SiddharthChillale_square.jpg"
     imageTitle: my image
     buttons:
