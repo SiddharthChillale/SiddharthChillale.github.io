@@ -1,4 +1,4 @@
-baseURL: "https://siddharthchillale.github.io/"
+# baseURL: "https://siddharthchillale.github.io/"
 title: Siddharth C
 paginate: 10
 theme: PaperMod

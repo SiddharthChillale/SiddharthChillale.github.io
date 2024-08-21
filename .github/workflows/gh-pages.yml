@@ -25,16 +25,12 @@ jobs:
         env: 
           HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
       
-      - name: Print env
-        run: echo "HUGO_BASEURLENV = $HUGO_BASEURLENV"
-        env: 
-          HUGO_BASEURLENV: ${{ vars.HUGO_BASEURLENV-github-pages }}
 
       - name: Build
-        # env: 
-        #   HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
-        # run: hugo --minify -b https://siddharthchillale.github.io/
-        run: hugo --minify
+        run: hugo --minify -b $HUGO_BASEURL
+        env: 
+          HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
+        # run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
