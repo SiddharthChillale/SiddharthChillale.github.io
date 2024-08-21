@@ -21,6 +21,9 @@ jobs:
           extended: true
 
       - name: Build
+        env:
+          HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
+          HUGO_GOOGLEANALYTICS: ${{ vars.HUGO_GOOGLEANALYTICS}}
         run: hugo --minify
 
       - name: Deploy
