@@ -21,10 +21,14 @@ jobs:
           extended: true
 
       - name: Print repo
-        run: echo "HUGO_BASEURL = $ {{ vars.HUGO_BASEURL}}"  
+        env: 
+          HUGO_BASEURL: $ {{ vars.HUGO_BASEURL}}
+        run: echo "HUGO_BASEURL = $HUGO_BASEURL"  
       
       - name: Print env
-        run: echo "HUGO_BASEURLENV = $ {{ vars.HUGO_BASEURLENV}}"
+        env: 
+          HUGO_BASEURLENV: $ {{ vars.HUGO_BASEURLENV}}
+        run: echo "HUGO_BASEURLENV = $HUGO_BASEURLENV"
 
       - name: Build
         # env: 
