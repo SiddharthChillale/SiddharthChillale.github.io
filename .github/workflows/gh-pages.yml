@@ -28,7 +28,7 @@ jobs:
       - name: Print env
         run: echo "HUGO_BASEURLENV = $HUGO_BASEURLENV"
         env: 
-          HUGO_BASEURLENV: ${{ vars.HUGO_BASEURLENV }}
+          HUGO_BASEURLENV: ${{ vars.HUGO_BASEURLENV-github-pages }}
 
       - name: Build
         # env: 
