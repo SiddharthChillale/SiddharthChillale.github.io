@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Raytracing on Siddharth C</title>
-    <link>https://siddharthchillale.github.io/tags/raytracing/</link>
+    <link>https://envsiddharthchillale.github.io/tags/raytracing/</link>
     <description>Recent content in Raytracing on Siddharth C</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 Feb 2023 12:08:21 -0500</lastBuildDate>
-    <atom:link href="https://siddharthchillale.github.io/tags/raytracing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://envsiddharthchillale.github.io/tags/raytracing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ray Tracing in One Weekend</title>
-      <link>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</link>
+      <link>https://envsiddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</guid>
+      <guid>https://envsiddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</guid>
       <description>My understanding from Ray Tracing in One Weekend.</description>
     </item>
     <item>
       <title>Ray Tracing: The Next Week</title>
-      <link>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</link>
+      <link>https://envsiddharthchillale.github.io/projects/rt_next_week/rt_next_week/</link>
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</guid>
+      <guid>https://envsiddharthchillale.github.io/projects/rt_next_week/rt_next_week/</guid>
       <description>My understanding from Ray Tracing: The Next Week.</description>
     </item>
     <item>
       <title>PathTracer: Global Illumination</title>
-      <link>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
+      <link>https://envsiddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
+      <guid>https://envsiddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
       <description>A pathtracing course project.</description>
     </item>
   </channel>

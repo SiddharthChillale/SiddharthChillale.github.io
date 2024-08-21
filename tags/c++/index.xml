@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C&#43;&#43; on Siddharth C</title>
-    <link>https://siddharthchillale.github.io/tags/c&#43;&#43;/</link>
+    <link>https://envsiddharthchillale.github.io/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on Siddharth C</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Mar 2023 11:05:17 -0400</lastBuildDate>
-    <atom:link href="https://siddharthchillale.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://envsiddharthchillale.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Primitives in C&#43;&#43; for Multithreading</title>
-      <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
+      <link>https://envsiddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
-      <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
+      <guid>https://envsiddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
       <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
     </item>
   </channel>
