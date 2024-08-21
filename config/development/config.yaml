@@ -1,4 +1,4 @@
-baseURL: $HUGO_BASEURL
+baseURL: http://localhost:1313/
 title: Siddharth Chillale
 paginate: 10
 theme: PaperMod
@@ -9,17 +9,15 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 enableGitInfo: true
-# googleAnalytics: $HUGO_GOOGLEANALYTICS
 
 minify:
   disableXML: true
-  # minifyOutput: true
 
 outputs:
     home:
       - HTML
       - RSS
-      - JSON # is necessary
+      - JSON 
 
 params:
   env: production 
@@ -27,10 +25,9 @@ params:
   description: "Portfolio"
   keywords: [Blog, Siddharth, Siddharth Chillale, Portfolio, PaperMod, Graphics, Programming, Lifestyle, C++]
   author: Siddharth Chillale
-  # author: ["Me", "You"] # multiple authors
   
   DateFormat: "January 2, 2006"
-  defaultTheme: light # dark, light
+  defaultTheme: light 
   disableThemeToggle: false
   
   
@@ -46,8 +43,7 @@ params:
   
 
   assets:
-    disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableHLJS: true # 
     favicon: "profile/sc_logo.png"
     favicon16x16: "profile/sc_logo.png"
     favicon32x32: "profile/sc_logo.png"
@@ -58,15 +54,12 @@ params:
     icon: profile/sc_logo.png
     iconHeight: 36
 
-  # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: true 
     title_f: dev Siddharth
     title_l:  Chillale
     subtitle: "Software Developer | Data Engineering, Cloud Computing, Web Develpment"
     imageUrl: "/profile/SiddharthChillale_square.jpg"
-    # imageWidth: 120
-    # imageHeight: 120
     imageTitle: my image
     buttons:
       - name: Resume 📥 
@@ -74,7 +67,6 @@ params:
       - name: Projects 📑
         url: projects
 
-  # home-info mode
   homeInfoParams:
     Title: "Schillale \U0001F44B"
     Content: Welcome to my blog
@@ -94,20 +86,11 @@ params:
     google:
       SiteVerificationTag: "XYZabc"
     
-
-  # cover:
-  #   # responsiveImages: false
-  #   hidden: false # hide everywhere but not in structured data
-  #   hiddenInList: false # hide on list pages and home
-  #   hiddenInSingle: false # hide on single page
-
   editPost:
     URL: "https://github.com/siddharthchillale.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    Text: "Suggest Changes" 
+    appendFilePath: true 
 
-  # for search
-  # https://fusejs.io/api/options.html
 
 taxonomies:
   category: categories
@@ -158,9 +141,7 @@ menu:
 
 markup:
   highlight:
-    # anchorLineNos: true
     codeFences: true
     guessSyntax: true
     lineNos: true
-    # noClasses: false
     style: monokai
