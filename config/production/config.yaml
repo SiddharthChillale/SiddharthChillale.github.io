@@ -10,7 +10,7 @@ buildExpired: false
 enableEmoji: true
 enableGitInfo: true
 # googleAnalytics: G-CMB721BXKS
-# googleAnalytics: 
+googleAnalytics: $HUGO_GOOGLEANALYTICS
 
 minify:
   disableXML: true
@@ -24,7 +24,7 @@ outputs:
 
 params:
   env: production 
-  title: Siddharth C + $HUGO_GOOGLEANALYTICS
+  title: Siddharth C 
   description: "Portfolio"
   keywords: [Blog, Siddharth, Siddharth Chillale, Portfolio, PaperMod, Graphics, Programming, Lifestyle, C++]
   author: Siddharth Chillale
