@@ -20,16 +20,18 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Print repo
-        run: echo "HUGO_BASEURL = $HUGO_BASEURL"  
+      - name: Print repo sec
+        run: echo "HUGO_GS = $HUGO_GOOGLEANALYTICS"  
         env: 
           HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
+          HUGO_GOOGLEANALYTICS: ${{ secrets.HUGO_GOOGLEANALYTICS }}
       
 
       - name: Build
         run: hugo --minify -b $HUGO_BASEURL
         env: 
           HUGO_BASEURL: ${{ vars.HUGO_BASEURL }}
+          
         # run: hugo --minify
 
       - name: Deploy
