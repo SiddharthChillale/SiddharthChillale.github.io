@@ -1,5 +1,5 @@
-baseURL: $HUGO_BASEURL
-title: Siddharth Chillale
+baseURL: "https://siddharthchillale.github.io/"
+title: Siddharth C
 paginate: 10
 theme: PaperMod
 
@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 enableGitInfo: true
-googleAnalytics: $HUGO_GOOGLEANALYTICS
+googleAnalytics: G-CMB721BXKS
 
 minify:
   disableXML: true
