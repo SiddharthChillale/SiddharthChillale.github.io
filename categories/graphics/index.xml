@@ -6,15 +6,8 @@
     <description>Recent content in Graphics on Siddharth C</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Feb 2023 12:08:21 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 17:58:51 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cudafying ray tracing in one weekend</title>
-      <link>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
-      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
-      <description>My understanding from porting Raytracing to Cuda</description>
-    </item>
     <item>
       <title>Ray Tracing in One Weekend</title>
       <link>https://siddharthchillale.github.io/projects/rt_one_weekend/rt_one_weekend/</link>
@@ -42,13 +35,6 @@
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
       <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
       <description>A pathtracing course project.</description>
-    </item>
-    <item>
-      <title>Corona Dashboard devlog</title>
-      <link>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/corona_dashboard/corona_dashboard/</guid>
-      <description>Ay ! I developed a COVID-19 dashboard.</description>
     </item>
   </channel>
 </rss>

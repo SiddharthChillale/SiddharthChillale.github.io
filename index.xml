@@ -6,7 +6,7 @@
     <description>Recent content on Siddharth C</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 12:30:23 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 17:58:51 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Turning my personal website dream into reality ft.Hugo</title>
@@ -37,16 +37,9 @@ kinda like the middleware in express js
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
-      <description>Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
-Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.
-Texture Mapping: I gained experience with texture mapping, where images are applied to 3D models to enhance their realism.</description>
-    </item>
-    <item>
-      <title>Cudafying ray tracing in one weekend</title>
-      <link>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</link>
-      <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/rt_cuda/rt_cuda/</guid>
-      <description>My understanding from porting Raytracing to Cuda</description>
+      <description>This is journal noting down the topics I had to cover through my deep dive into D3D11.
+Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
+Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.</description>
     </item>
     <item>
       <title>Ray Tracing in One Weekend</title>
@@ -89,7 +82,7 @@ git log
       <description>A pathtracing course project.</description>
     </item>
     <item>
-      <title>Miscellaneous Projects</title>
+      <title>Miscellaneous Projects that get thrown under the rug</title>
       <link>https://siddharthchillale.github.io/projects/small_projects/small_projects/</link>
       <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://siddharthchillale.github.io/projects/small_projects/small_projects/</guid>
