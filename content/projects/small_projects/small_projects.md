@@ -1,5 +1,5 @@
 ---
-Title: Miscellaneous Projects
+Title: Miscellaneous Projects that get thrown under the rug
 Date: 2020-11-22
 Author: Siddharth Chillale
 ---

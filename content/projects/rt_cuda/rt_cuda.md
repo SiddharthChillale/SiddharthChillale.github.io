@@ -1,7 +1,7 @@
 ---
 title: "Cudafying ray tracing in one weekend"
 date: 2022-07-02T19:14:01-04:00
-draft: false
+draft: true
 summary: "My understanding from porting Raytracing to Cuda"
 categories: [Graphics]
 tags: [coding, graphics, GPU]

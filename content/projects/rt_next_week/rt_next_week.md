@@ -13,7 +13,7 @@ cover:
   relative: true
 ---
 
-Ray tracing next week 
+Ray tracing next week : This is a continuation of my "Raytracing in a weekend" project.
 
 1. Motion Blur
 

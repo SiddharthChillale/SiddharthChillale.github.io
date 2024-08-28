@@ -14,7 +14,8 @@ cover:
 ---
 
 
-Hello, I wanted to learn more about raytracing. I had taken up a Computer Science course in university before which taught ray tracing. Now I did understand the theory of raytracing and the math behind it, but I didn't completely understand how the codebase was structured. 
+I wanted to learn more about raytracing. This is knowledge follow-up from a Computer Science course that I undertook in university which went through ray tracing fundamentals. Now I did understand the theory of raytracing and the math behind it, but I didn't completely understand how the codebase was structured. 
+
 Luckily I came across Pete Shirley's books on RayTracing, namely [Ray Tracing in One Weekend](https://raytracing.github.io/books/RayTracingInOneWeekend.html), [RayTracing the next week](https://raytracing.github.io/books/RayTracingTheNextWeek.html), and [Ray Tracing the rest of your life](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html). 
 
 Below is my journey through all three books: 

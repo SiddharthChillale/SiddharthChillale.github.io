@@ -13,9 +13,11 @@ cover:
   relative: true
 ---
 
-I develop a simple path tracer that can render scenes with global illumination. The first two
-tasks focus on providing an efficient implementation of ray-scene geometry queries. In the third
-task (Pathtracer) I developed the ability to simulate light bounces around the scene. Specifically,
+This is a university course project that I took in University at Buffalo on Computer Graphics.
+
+I developed a simple path tracer that can render scenes with global illumination. The first two
+tasks focus on providing an efficient implementation of ray-scene geometry. In the third
+task (Pathtracer) I developed the ability to simulate how light bounces around the scene. Specifically,
 indirect and direct illumination.
 The pathtracer renders _COLLADA_ files.
 

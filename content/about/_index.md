@@ -31,17 +31,18 @@ Ping me on any of my social to chat with me 🙂!!
 **📝 Latest Blog Posts**
 
 <!-- BLOG-POST-LIST:START -->
+- [Journey of my personal website](/blog/personal_website/personal_website)
 - [Ray Tracing in One Weekend](/projects/rt_one_weekend/rt_one_weekend)
 - [Rendering Pipeline of Unreal Engine](/blog/unreal_rendering/unreal_rendering)
 - [Ray Tracing: The Next Week](/projects/rt_next_week/rt_next_week)
 - [Other Blogs](/blog/)
 <!-- BLOG-POST-LIST:END -->
 
--------
-<!-- 
-📊 **Current Projects Lists**
+<!-- ------- -->
+ 
+<!-- 📊 **Current Projects Lists** -->
 <!--START_SECTION:waka-->
-- &check; - 2D C++ game development [link](https://github.com/SiddharthChillale/snek_game)
+<!-- - &check; - 2D C++ game development [link](https://github.com/SiddharthChillale/snek_game)
   - Wrote a C++ game from scratch featuring a snake who can eat food to grow longer and snacks to move faster. Used WinAPI for window creation and coloring graphics. Implemented primitives like lines, triangles and quads. 
 - &check; - Software Offline Ray Tracer [link](https://github.com/SiddharthChillale/Ray_Tracer)
   - Wrote a ray tracer following the raytracing series of three books by Peter Shirley. Includes acceleration using bounding volume hierarchical structures of AABBs, volume rendering, direct and indirect light illumination using BRDF model, Texture and image mapping. A Z-Buffer is used to determine the order of drawing overlapping triangles. 
@@ -50,7 +51,7 @@ Ping me on any of my social to chat with me 🙂!!
 - [ ] - Realtime DirectX Raytracing (future)
 - [ ] - Exploration of CPU-Multithreading and uses in applictions. Currently practisiing with Leetcode Concurrency problems.
 - [ ] - SFML application for demonstrating different sampling techniques like Poisson-Disk sampling, Importance Sampling, Uniform Sampling, Random Sampling.
-- [ ] - Neural Rendering (future) -->
+- [ ] - Neural Rendering (future)  -->
 
 <!--END_SECTION:waka-->
 
@@ -58,9 +59,8 @@ Ping me on any of my social to chat with me 🙂!!
 
 :books: **What I'm reading currently**
 
+- Soft skills: The Software Developer's Life Manual - John Sonmez
 - Architecture of Consoles - https://www.copetti.org/writings/consoles/
-- Game Engine Architecture - Jason Gregory
-- Physically Based Rendering - Matt Pharr, Greg Humphreys
 
 -------
 

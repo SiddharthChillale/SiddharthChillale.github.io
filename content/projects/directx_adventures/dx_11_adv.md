@@ -9,7 +9,7 @@ cover:
   relative: true
 ---
 
-
+This is journal noting down the topics I had to cover through my deep dive into D3D11.
 
 1.  **Rendering Triangles through rasterization**: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
 
