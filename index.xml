@@ -4,10 +4,17 @@
     <title>Siddharth C</title>
     <link>https://siddharthchillale.github.io/</link>
     <description>Recent content on Siddharth C</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.133.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Aug 2024 01:46:45 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 12:30:23 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turning my personal website dream into reality ft.Hugo</title>
+      <link>https://siddharthchillale.github.io/blog/personal_website/personal_website/</link>
+      <pubDate>Wed, 28 Aug 2024 19:29:20 -0500</pubDate>
+      <guid>https://siddharthchillale.github.io/blog/personal_website/personal_website/</guid>
+      <description>The Inception 🌠 Since I began programming, I had been wanting a website of my own. Surely it is one of those things that initially gets someone to pursue programming. Not me though. I wanted a website to showcase my art, and programming projects and have a place to help grow my thoughts in. I wanted a very functional, yet lean website that didn&amp;rsquo;t pull my focus away from my projects and life.</description>
+    </item>
     <item>
       <title>Primitives in C&#43;&#43; for Multithreading</title>
       <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
@@ -103,6 +110,13 @@ Description - Built a courier managements system web application in Flask and da
       <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
 Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
 Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
+    </item>
+    <item>
+      <title>LinkedIn Tips</title>
+      <link>https://siddharthchillale.github.io/blog/linkedin-tips/linkedin_tips/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://siddharthchillale.github.io/blog/linkedin-tips/linkedin_tips/</guid>
+      <description>LinkedIn Tips Summary : Market yourself with your elevator pitch Optimise LinkedIn profile components (summary and accomplishments) Describe effectively your work experience and projects Create connections participate in the content Your Aim — Raise visibilty Important Points Write a polite and short introduction 1 2 3 4 5 6 7 Hi ___&amp;lt;insert name here&amp;gt;, I am Siddharth, a student pursuing Masters in computer science at University at Buffalo. I would love to hear more about your work at ___&amp;lt;insert their jobs here&amp;gt;.</description>
     </item>
     <item>
       <title>Corona Dashboard devlog</title>

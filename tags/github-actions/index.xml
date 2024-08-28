@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github-Actions on Siddharth C</title>
+    <link>https://siddharthchillale.github.io/tags/github-actions/</link>
+    <description>Recent content in Github-Actions on Siddharth C</description>
+    <generator>Hugo -- 0.133.1</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Aug 2024 12:30:23 +0530</lastBuildDate>
+    <atom:link href="https://siddharthchillale.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Turning my personal website dream into reality ft.Hugo</title>
+      <link>https://siddharthchillale.github.io/blog/personal_website/personal_website/</link>
+      <pubDate>Wed, 28 Aug 2024 19:29:20 -0500</pubDate>
+      <guid>https://siddharthchillale.github.io/blog/personal_website/personal_website/</guid>
+      <description>The Inception 🌠 Since I began programming, I had been wanting a website of my own. Surely it is one of those things that initially gets someone to pursue programming. Not me though. I wanted a website to showcase my art, and programming projects and have a place to help grow my thoughts in. I wanted a very functional, yet lean website that didn&amp;rsquo;t pull my focus away from my projects and life.</description>
+    </item>
+  </channel>
+</rss>
