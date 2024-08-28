@@ -1,7 +1,7 @@
 ---
 Title: LinkedIn Tips
 Date: 2020-11-04
-draft: true
+draft: false
 Author: Siddharth Chillale
 ---
 
