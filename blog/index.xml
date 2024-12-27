@@ -4,33 +4,54 @@
     <title>Blogs on Siddharth C</title>
     <link>https://siddharthchillale.github.io/blog/</link>
     <description>Recent content in Blogs on Siddharth C</description>
-    <generator>Hugo -- 0.133.1</generator>
+    <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 12:30:23 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 17:31:16 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Turning my personal website dream into reality ft.Hugo</title>
       <link>https://siddharthchillale.github.io/blog/personal_website/personal_website/</link>
       <pubDate>Wed, 28 Aug 2024 19:29:20 -0500</pubDate>
       <guid>https://siddharthchillale.github.io/blog/personal_website/personal_website/</guid>
-      <description>The Inception 🌠 Since I began programming, I had been wanting a website of my own. Surely it is one of those things that initially gets someone to pursue programming. Not me though. I wanted a website to showcase my art, and programming projects and have a place to help grow my thoughts in. I wanted a very functional, yet lean website that didn&amp;rsquo;t pull my focus away from my projects and life.</description>
+      <description>&lt;h3 id=&#34;the-inception-&#34;&gt;The Inception 🌠&lt;/h3&gt;
+&lt;p&gt;Since I began programming, I had been wanting a website of my own. Surely it is one of those things that initially gets someone to pursue programming. Not me though. I wanted a website to showcase my art, and programming projects and have a
+place to help grow my thoughts in. I wanted a very functional, yet lean website that didn&amp;rsquo;t pull my focus away from my projects and life.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Primitives in C&#43;&#43; for Multithreading</title>
       <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
-      <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation:&lt;/h2&gt;
+&lt;p&gt;There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?&amp;rdquo;, it befuddled me. I wondered if the question made any sense and why were we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One method to solidify our thoughts is to write about it. Hence this article.
+This article won&amp;rsquo;t provide with implementation details on each primitive. It is to throw light on when and where each primitive is useful, and not examples on how to write them in code.
+Understanding the above question opens up many aspects of concurrent programming.  Here we will approach the synchronization primitives made available to use in the STL (C++ 20 and above).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Behavioural Design Patterns in C&#43;&#43;</title>
       <link>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</link>
       <pubDate>Tue, 24 Jan 2023 11:46:00 -0500</pubDate>
       <guid>https://siddharthchillale.github.io/blog/behavioural_design_pattern/beh_dp/</guid>
-      <description>Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of the keypoints of the different behavioural design patterns in C++ condensed into quick bites from a course on LinkedIn Learning.
-Chain of Responsibility for series of nested handlers
-kinda like the middleware in express js
-1 2 3 4 class Handler{ virtual Handler* setNext (Handler* nextHandler) = 0; virtual Command* handle(Command* cmd)=0; }; Command To reduce coupling between classes that call one another.</description>
+      <description>&lt;p&gt;Design patterns in C++ are ways to structure code so as to maximise code reusability and versatility. Below are some of the keypoints of the different behavioural design patterns in C++ condensed into quick bites from a course on LinkedIn Learning.&lt;/p&gt;
+&lt;h3 id=&#34;chain-of-responsibility&#34;&gt;Chain of Responsibility&lt;/h3&gt;
+&lt;p&gt;for series of nested handlers&lt;/p&gt;
+&lt;p&gt;kinda like the middleware in express js&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Handler&lt;/span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;virtual&lt;/span&gt; Handler&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;setNext&lt;/span&gt; (Handler&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; nextHandler) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;virtual&lt;/span&gt; Command&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;handle&lt;/span&gt;(Command&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; cmd)&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;command&#34;&gt;Command&lt;/h3&gt;
+&lt;p&gt;To reduce coupling between classes that call one another.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rendering Pipeline of Unreal Engine</title>
@@ -44,28 +65,120 @@ kinda like the middleware in express js
       <link>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</link>
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
       <guid>https://siddharthchillale.github.io/blog/git-mistakes/git_mistakes/</guid>
-      <description>git status
-git log
---stat : log with the change stats. git branch : shows all available branches.
-&amp;lt;branch_name&amp;gt; : creates a branch with name as &amp;lt;branch_name&amp;gt;. git ammend
---amend -m &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only --amend &amp;lt;nothing&amp;gt; : recommits with interactive editor for changing message. git checkout
-&amp;lt;branch_name&amp;gt; : switches to &amp;lt;branch_name&amp;gt; &amp;lt;file_name&amp;gt; : removes all recent changes for &amp;lt;file_name&amp;gt; &amp;lt;commit_hash&amp;gt; : pulls the commit with hash &amp;lt;commit_hash&amp;gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state.</description>
+      <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--stat&lt;/code&gt; : log with the change stats.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt; : shows all available branches.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;branch_name&amp;gt;&lt;/code&gt; : creates a branch with name as &lt;code&gt;&amp;lt;branch_name&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git ammend&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--amend -m&lt;/code&gt; &amp;ldquo;change the commit message&amp;rdquo; : changes commit message only&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--amend &amp;lt;nothing&amp;gt;&lt;/code&gt; : recommits with interactive editor for changing message.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git checkout&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;branch_name&amp;gt;&lt;/code&gt; : switches to &lt;code&gt;&amp;lt;branch_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;file_name&amp;gt;&lt;/code&gt; : removes all recent changes for &lt;code&gt;&amp;lt;file_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;commit_hash&amp;gt;&lt;/code&gt; : pulls the commit with hash &lt;code&gt;&amp;lt;commit_hash&amp;gt;&lt;/code&gt; in a &amp;ldquo;DETACHED HEAD&amp;rdquo; state. i.e. We are not on any branch but outside. aNy changes will be discarded in not made permanent. If changes are to made permanent, create a new branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PathTracer: Global Illumination</title>
+      <link>https://siddharthchillale.github.io/blog/pathtracer/pathtracer/</link>
+      <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
+      <guid>https://siddharthchillale.github.io/blog/pathtracer/pathtracer/</guid>
+      <description>A pathtracing course project.</description>
     </item>
     <item>
       <title>How to Gain Experience</title>
       <link>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</link>
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://siddharthchillale.github.io/blog/how-to-gain-experience/gain_exp/</guid>
-      <description>What to do to gain Experience Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself. How to know what the jobs require
-Job Descriptions Informational interview Linkedin Research BE REALISTIC Once you know what the requirements are
-Look for major roles and responsibilities. Prepare most IMPRESSIVE stories of your existing experiences. List out things you don&amp;rsquo;t know. VOLUNTEER Be ready to work for free</description>
+      <description>&lt;h1 id=&#34;what-to-do-to-gain-experience&#34;&gt;&lt;strong&gt;What to do to gain Experience&lt;/strong&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Reorient your mindset with how the hiring manager or recruiters view you and not how you present yourself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;How to know what the jobs require&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Job Descriptions&lt;/li&gt;
+&lt;li&gt;Informational interview&lt;/li&gt;
+&lt;li&gt;Linkedin Research&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;be-realistic&#34;&gt;BE REALISTIC&lt;/h2&gt;
+&lt;p&gt;Once you know what the requirements are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for major roles and responsibilities.&lt;/li&gt;
+&lt;li&gt;Prepare most IMPRESSIVE stories of your existing experiences.&lt;/li&gt;
+&lt;li&gt;List out things you don&amp;rsquo;t know.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;volunteer&#34;&gt;VOLUNTEER&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Be ready to work for free&lt;/p&gt;</description>
     </item>
     <item>
       <title>LinkedIn Tips</title>
       <link>https://siddharthchillale.github.io/blog/linkedin-tips/linkedin_tips/</link>
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://siddharthchillale.github.io/blog/linkedin-tips/linkedin_tips/</guid>
-      <description>LinkedIn Tips Summary : Market yourself with your elevator pitch Optimise LinkedIn profile components (summary and accomplishments) Describe effectively your work experience and projects Create connections participate in the content Your Aim — Raise visibilty Important Points Write a polite and short introduction 1 2 3 4 5 6 7 Hi ___&amp;lt;insert name here&amp;gt;, I am Siddharth, a student pursuing Masters in computer science at University at Buffalo. I would love to hear more about your work at ___&amp;lt;insert their jobs here&amp;gt;.</description>
+      <description>&lt;h2 id=&#34;linkedin-tips&#34;&gt;LinkedIn Tips&lt;/h2&gt;
+&lt;h3 id=&#34;summary-&#34;&gt;Summary :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Market yourself with your elevator pitch&lt;/li&gt;
+&lt;li&gt;Optimise LinkedIn profile components (summary and accomplishments)&lt;/li&gt;
+&lt;li&gt;Describe effectively your work experience and projects&lt;/li&gt;
+&lt;li&gt;Create connections&lt;/li&gt;
+&lt;li&gt;participate in the content&lt;/li&gt;
+&lt;li&gt;Your Aim — Raise visibilty&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;important-points&#34;&gt;Important Points&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Write a polite and short introduction&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Hi ___&amp;lt;insert name here&amp;gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I am Siddharth, a student pursuing Masters in computer science at University at Buffalo.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;I would love to hear more about your work at  ___&amp;lt;insert their jobs here&amp;gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Would you be able to connect for a quick chat ?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Thank you for your time !
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Best, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Siddharth.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;a-linkedin-summary-is-your-elevator-pitch-about-yourself&#34;&gt;A LinkedIn summary is your elevator pitch about yourself.&lt;/h2&gt;
+&lt;h4 id=&#34;example-summary&#34;&gt;&amp;ldquo;Example summary&amp;rdquo;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m a student pursing Masters in Computer Science at University at Buffalo, NY. My latest web app project is a dashboard ruuning data analysis and showcasing affected numbers during the COVID-19 crisis. Apart from my academics, I&amp;rsquo;m working on helping with the COVID research by running models on the gathered data.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Multithreading on Siddharth C</title>
     <link>https://siddharthchillale.github.io/tags/multithreading/</link>
     <description>Recent content in Multithreading on Siddharth C</description>
-    <generator>Hugo -- 0.133.1</generator>
+    <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Mar 2023 11:05:17 -0400</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/tags/multithreading/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</link>
       <pubDate>Thu, 23 Feb 2023 19:29:20 -0500</pubDate>
       <guid>https://siddharthchillale.github.io/blog/multithreading_primitives/primitives/</guid>
-      <description>Motivation: There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?</description>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation:&lt;/h2&gt;
+&lt;p&gt;There are some explanations on certain terminologies commonly seen whenever multithreading is brought up. These terminologies should be somewhat familiar to people who study computer science. However, even when I knew what they meant, I didn&amp;rsquo;t know how they interoperate with other &amp;ldquo;CS thingies&amp;rdquo;. For example, when one of my professor asked a question &amp;ldquo;If a computer just runs one thread at a time, is it necessary to ensure synchronization ?&amp;rdquo;, it befuddled me. I wondered if the question made any sense and why were we asked such a question. I also failed to understand how mutexes, locks, semaphores,etc were differ from each other and what does each of them bring to the table. This may make some sense to other people but it just challenged my understanding of multithreading and concurrent programming. One method to solidify our thoughts is to write about it. Hence this article.
+This article won&amp;rsquo;t provide with implementation details on each primitive. It is to throw light on when and where each primitive is useful, and not examples on how to write them in code.
+Understanding the above question opens up many aspects of concurrent programming.  Here we will approach the synchronization primitives made available to use in the STL (C++ 20 and above).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

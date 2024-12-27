@@ -4,18 +4,22 @@
     <title>Graphics on Siddharth C</title>
     <link>https://siddharthchillale.github.io/tags/graphics/</link>
     <description>Recent content in Graphics on Siddharth C</description>
-    <generator>Hugo -- 0.133.1</generator>
+    <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 17:58:51 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 17:31:16 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Journey into learning Direct3D 11</title>
+      <title>3D rasterizer with DirectX 11</title>
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
-      <description>This is journal noting down the topics I had to cover through my deep dive into D3D11.
-Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
-Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.</description>
+      <description>&lt;p&gt;This is journal noting down the topics I covered through my deep dive into Direct 3D 11.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rendering Triangles through rasterization&lt;/strong&gt;: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model loading with normals&lt;/strong&gt;: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ray Tracing in One Weekend</title>
@@ -33,9 +37,9 @@ Model loading with normals: How to load 3D models into the graphics memory of th
     </item>
     <item>
       <title>PathTracer: Global Illumination</title>
-      <link>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
+      <link>https://siddharthchillale.github.io/blog/pathtracer/pathtracer/</link>
       <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
+      <guid>https://siddharthchillale.github.io/blog/pathtracer/pathtracer/</guid>
       <description>A pathtracing course project.</description>
     </item>
   </channel>

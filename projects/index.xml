@@ -4,18 +4,22 @@
     <title>Projects on Siddharth C</title>
     <link>https://siddharthchillale.github.io/projects/</link>
     <description>Recent content in Projects on Siddharth C</description>
-    <generator>Hugo -- 0.133.1</generator>
+    <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 17:58:51 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 17:31:16 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Journey into learning Direct3D 11</title>
+      <title>3D rasterizer with DirectX 11</title>
       <link>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</link>
       <pubDate>Tue, 12 Jul 2022 19:14:01 -0400</pubDate>
       <guid>https://siddharthchillale.github.io/projects/directx_adventures/dx_11_adv/</guid>
-      <description>This is journal noting down the topics I had to cover through my deep dive into D3D11.
-Rendering Triangles through rasterization: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
-Model loading with normals: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.</description>
+      <description>&lt;p&gt;This is journal noting down the topics I covered through my deep dive into Direct 3D 11.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rendering Triangles through rasterization&lt;/strong&gt;: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model loading with normals&lt;/strong&gt;: How to load 3D models into the graphics memory of the GPU and incorporate normal vectors for lighting calculations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ray Tracing in One Weekend</title>
@@ -30,27 +34,6 @@ Model loading with normals: How to load 3D models into the graphics memory of th
       <pubDate>Sat, 02 Jul 2022 19:14:01 -0400</pubDate>
       <guid>https://siddharthchillale.github.io/projects/rt_next_week/rt_next_week/</guid>
       <description>My understanding from Ray Tracing: The Next Week.</description>
-    </item>
-    <item>
-      <title>PathTracer: Global Illumination</title>
-      <link>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</link>
-      <pubDate>Sat, 05 Feb 2022 21:47:05 +0530</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/pathtracer/pathtracer/</guid>
-      <description>A pathtracing course project.</description>
-    </item>
-    <item>
-      <title>Miscellaneous Projects that get thrown under the rug</title>
-      <link>https://siddharthchillale.github.io/projects/small_projects/small_projects/</link>
-      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://siddharthchillale.github.io/projects/small_projects/small_projects/</guid>
-      <description>&amp;ldquo;NIPS Papers Analysis&amp;rdquo;
-Description- Discovering the hottest topics in machine learning by analysing NIPS papers using NLP libraries in python.
-Github Link - SiddharthChillale/NIPS-papers-analyses
-&amp;ldquo;Risk and Returns: The Sharpe Ratio&amp;rdquo;
-Description - Studying Sharpe ratio for understanding Risk and Return for Amazon and Facebook stocks through the Fiscal Year 2016.
-Kaggle Link - siddalore/sharpe-ratio-study
-&amp;ldquo;Courier Management system&amp;rdquo;
-Description - Built a courier managements system web application in Flask and database hosted with SQLite, Handled the Model and View of the app with database implementation.</description>
     </item>
     <item>
       <title>Corona Dashboard devlog</title>
