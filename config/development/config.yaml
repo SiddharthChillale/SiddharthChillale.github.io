@@ -1,6 +1,6 @@
 baseURL: http://localhost:1313/
 title: Siddharth Chillale
-paginate: 10
+paginate: 20
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -12,6 +12,12 @@ enableGitInfo: true
 
 minify:
   disableXML: true
+
+languages:
+  en:
+    languageCode: en-us
+    languageName: English
+    weight: 1
 
 outputs:
     home:

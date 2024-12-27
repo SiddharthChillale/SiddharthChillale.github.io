@@ -1,5 +1,5 @@
 ---
-title: "My Journey into learning Direct3D 11"
+title: "3D rasterizer with DirectX 11"
 date: 2022-07-12T19:14:01-04:00
 draft: false
 tags: [graphics, Rendering]
@@ -9,7 +9,7 @@ cover:
   relative: true
 ---
 
-This is journal noting down the topics I had to cover through my deep dive into D3D11.
+This is journal noting down the topics I covered through my deep dive into Direct 3D 11.
 
 1.  **Rendering Triangles through rasterization**: Knowledge about the rendering pipeline process where triangles are converted into pixels on the screen by the graphics processing unit (GPU) through a technique called rasterization.
 
