@@ -6,8 +6,15 @@
     <description>Recent content in Blogs on Siddharth C</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Dec 2024 17:31:16 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2024 11:56:28 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I managed to redce my Docker image size by 81%</title>
+      <link>https://siddharthchillale.github.io/blog/docker-img-optimisation/docker-optimisation/</link>
+      <pubDate>Fri, 27 Dec 2024 19:14:01 -0400</pubDate>
+      <guid>https://siddharthchillale.github.io/blog/docker-img-optimisation/docker-optimisation/</guid>
+      <description>Optimising Docker Image size for a nodejs web server application</description>
+    </item>
     <item>
       <title>Turning my personal website dream into reality ft.Hugo</title>
       <link>https://siddharthchillale.github.io/blog/personal_website/personal_website/</link>
