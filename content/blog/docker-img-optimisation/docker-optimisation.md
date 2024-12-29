@@ -1,5 +1,5 @@
 ---
-title: "How I managed to redce my Docker image size by 81%"
+title: "How I managed to reduce my Docker image size by 81%"
 date: 2024-12-27T19:14:01-04:00
 draft: false
 summary: "Optimising Docker Image size for a nodejs web server application"
