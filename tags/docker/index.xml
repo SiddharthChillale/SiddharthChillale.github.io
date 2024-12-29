@@ -6,10 +6,10 @@
     <description>Recent content in Docker on Siddharth C</description>
     <generator>Hugo -- 0.140.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Dec 2024 11:56:28 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2024 11:58:37 +0530</lastBuildDate>
     <atom:link href="https://siddharthchillale.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How I managed to redce my Docker image size by 81%</title>
+      <title>How I managed to reduce my Docker image size by 81%</title>
       <link>https://siddharthchillale.github.io/blog/docker-img-optimisation/docker-optimisation/</link>
       <pubDate>Fri, 27 Dec 2024 19:14:01 -0400</pubDate>
       <guid>https://siddharthchillale.github.io/blog/docker-img-optimisation/docker-optimisation/</guid>
